@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Hugo Theme Dream</title>
+    <link>https://haidongsong.github.io/posts/</link>
+    <description>Recent content in Posts on Hugo Theme Dream</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Mar 2020 17:01:14 +0800</lastBuildDate>
+    
+	<atom:link href="https://haidongsong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Test Img</title>
+      <link>https://haidongsong.github.io/posts/test-img/</link>
+      <pubDate>Mon, 16 Mar 2020 17:01:14 +0800</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/test-img/</guid>
+      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>更新内容</title>
+      <link>https://haidongsong.github.io/posts/%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9-%E5%89%AF%E6%9C%AC/</link>
+      <pubDate>Mon, 16 Mar 2020 17:01:14 +0800</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9-%E5%89%AF%E6%9C%AC/</guid>
+      <description>[toc!?direction=lr]
+小书匠收费 收费与不收费的区别 收费 收费项目  pdf 定制化导出(pdf封面，水印，加密等) 支持在线更新，优先使用新功能 配置数据同步 自定义数据中心  </description>
+    </item>
+    
+    <item>
+      <title>更新内容</title>
+      <link>https://haidongsong.github.io/posts/%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</link>
+      <pubDate>Mon, 16 Mar 2020 17:01:14 +0800</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</guid>
+      <description>[toc!?direction=lr]
+小书匠收费 收费与不收费的区别 收费 收费项目  pdf 定制化导出(pdf封面，水印，加密等) 支持在线更新，优先使用新功能 配置数据同步 自定义数据中心  </description>
+    </item>
+    
+    <item>
+      <title>Ppx</title>
+      <link>https://haidongsong.github.io/posts/ppx/</link>
+      <pubDate>Mon, 16 Mar 2020 16:39:56 +0800</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/ppx/</guid>
+      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://haidongsong.github.io/posts/test/</link>
+      <pubDate>Mon, 16 Mar 2020 16:34:41 +0800</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/test/</guid>
+      <description>[toc]
+APP抓取 环境搭建 安装fiddler  设置switchypmega后，没有办法联网．不设置抓不到数据  genymotion的安装和填坑指南   下载死慢死慢　７ｋ左右
+  已经解决（突然就好了）．．．可能网络问题，等等就好，神经病一样的网络．
+  附件提供下载包
+  # 安装virtualbox sudo apt install virtualbox -y cd ~/Downloads/ chmod u+x ./genymotion-3.0.2-linux_x64.bin sudo ./genymotion-3.0.2-linux_x64.bin -d ~/opt #起别名 #让命令别名永久生效： gedit ~/.bashrc 在~/bashrc文件中追加alias genymotion=&amp;quot;~/opt/genymotion/genymotion&amp;rdquo; ,再source即可立即生效。 https://pan.baidu.com/s/1kUAftyR
+解决镜像下载慢的问题  genymotion默认的路径是~/.Genymobile, 这个文件夹下有个日志文件genymotion.log。或者全局搜索cd / &amp;amp;&amp;amp; sudo find ./ -name Genymobile，查看genymotion.log：vim - - genymotion.log, 然后找到类似Starting download of http://dl.genymotion.com/dists/5.0.0/ova/genymotion_vbox86p_5.0_170928_172212.ova （在最后几行），把这个地址copy出来去浏览器下载。 下载后将.ova文件cp到~/.Genymotion/Genymotion/ova/下，重新操作gui配置镜像，发现可以直接用了．  解决拖拽不能安装apk问题  下载附件genymotion-arm-translation_v1.1.zip 启动genymotion,在手机界面把这个zip文件拖到手机屏幕上,点确定安装,之后提示重启,重启之后，就不会有兼容性的问题了（安卓9.0版本不行，７．１之前的都可以，其他未作测试）   解决安装应用不兼容  下载附件Genymotion-ARM-Translation .</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://haidongsong.github.io/posts/my-first-post/</link>
+      <pubDate>Mon, 16 Mar 2020 15:39:08 +0800</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/my-first-post/</guid>
+      <description>去你吗的 </description>
+    </item>
+    
+    <item>
+      <title>app爬虫</title>
+      <link>https://haidongsong.github.io/posts/app%E7%88%AC%E8%99%AB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/app%E7%88%AC%E8%99%AB/</guid>
+      <description>[toc]
+APP抓取 环境搭建 安装fiddler  设置switchypmega后，没有办法联网．不设置抓不到数据  genymotion的安装和填坑指南   下载死慢死慢　７ｋ左右
+  已经解决（突然就好了）．．．可能网络问题，等等就好，神经病一样的网络．
+  附件提供下载包
+  # 安装virtualbox sudo apt install virtualbox -y cd ~/Downloads/ chmod u+x ./genymotion-3.0.2-linux_x64.bin sudo ./genymotion-3.0.2-linux_x64.bin -d ~/opt #起别名 #让命令别名永久生效： gedit ~/.bashrc 在~/bashrc文件中追加alias genymotion=&amp;quot;~/opt/genymotion/genymotion&amp;rdquo; ,再source即可立即生效。 https://pan.baidu.com/s/1kUAftyR
+解决镜像下载慢的问题  genymotion默认的路径是~/.Genymobile, 这个文件夹下有个日志文件genymotion.log。或者全局搜索cd / &amp;amp;&amp;amp; sudo find ./ -name Genymobile，查看genymotion.log：vim - - genymotion.log, 然后找到类似Starting download of http://dl.genymotion.com/dists/5.0.0/ova/genymotion_vbox86p_5.0_170928_172212.ova （在最后几行），把这个地址copy出来去浏览器下载。 下载后将.ova文件cp到~/.Genymotion/Genymotion/ova/下，重新操作gui配置镜像，发现可以直接用了．  解决拖拽不能安装apk问题  下载附件genymotion-arm-translation_v1.1.zip 启动genymotion,在手机界面把这个zip文件拖到手机屏幕上,点确定安装,之后提示重启,重启之后，就不会有兼容性的问题了（安卓9.0版本不行，７．１之前的都可以，其他未作测试）   解决安装应用不兼容  下载附件Genymotion-ARM-Translation .</description>
+    </item>
+    
+    <item>
+      <title>readme</title>
+      <link>https://haidongsong.github.io/posts/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/readme/</guid>
+      <description>欢迎使用小书匠编辑器 nihao</description>
+    </item>
+    
+    <item>
+      <title>小书匠编辑器使用手册</title>
+      <link>https://haidongsong.github.io/posts/%E5%B0%8F%E4%B9%A6%E5%8C%A0%E7%BC%96%E8%BE%91%E5%99%A8%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/%E5%B0%8F%E4%B9%A6%E5%8C%A0%E7%BC%96%E8%BE%91%E5%99%A8%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</guid>
+      <description>[toc!]
+概要 小书匠编辑器是一款专为markdown写作而设计的编辑器。
+主要功能  专为markdown写作设计的文档编辑器，让用户心无旁骛的进行创作。 多种编辑模式。单栏编辑，双栏编辑，三栏编辑，全屏写作，全屏阅读&amp;hellip;想怎么切换，就怎么切换，就是这样随心所欲。 多种编辑器实现。codemirror编辑器（提供vim,emacs按键，行专注等），ace编辑器（提供vim，emacs按键绑定，显示行号），轻量编辑器，CJK竖排编辑器 多种主题选择。包括编辑器主题，预览区代码高亮主题，及预览区用户自定义css。 丰富的语法支持。不仅提供了常用的commanmarkdown语法，还提供了许多有用的扩展语法，比如==Latex公式==，==表格==, ==目录==， ==脚注==, ==视频==, ==音频==, ==附件==, ==checklist==, ==流程图==等。更多语法可查看&amp;lt;小书匠语法使用手册&amp;gt; 代码块文字格式语法。语法可查看&amp;lt;小书匠语法使用手册&amp;gt; 第三方同步。==浏览器存储==, ==本地文件系统存储==, ==dropbox==, ==evernote==, ==印象笔记==,==gitoschina==, ==为知笔记==, ==github==等多种存储方案，保证了用户数据的安全，也让用户在存储方案上有了更多的选择。 支持evernote，印象笔记。提供双向操作，可以将文章保存到evernote/印象笔记上，也可以从evernote/印象笔记上导入数据。同时提供标签，附件，图片，待办等相关处理。 强大的文件管理功能。文件信息，标签，附件，音频，视频，图片管理。 发布功能。 支持将文章发布到博客平台上。 邮件发送功能。 sourceMap对照功能。方便在源markdown文件和生成的html文件上进行比较，特别适合markdown初学者使用，了解每一个markdown解析产生的结果，也适用于文章后期的校对上。 ppt。 ppt跨屏演示 pdf预览 typewriter scrolling autocomplete 和 snippets 功能  离线版下载地址 http://soft.xiaoshujiang.com
+WEB版访问地址 http://markdown.xiaoshujiang.com
+ 元数据使用说明 语法开关元数据项，可以到设置面板里的语法扩展标签页下查看对应的元数据标识．在元数据里true时，表示当前文档强制打开该语法，false时表示强制关闭该语法．如果没有对应的元数据，则使用全局设置里的语法开关.
+preview_previewType元数据，可用的值为normal和presentation．用于文章在打开时，控制是否需要系统切换对应的预览界面．如果文章里没有该项元数据，或者元数据值不正确，则系统默认使用normal预览界面．该元数据仅控制文章打开时初始化的界面，用户依然可以通过按钮在不同预览界面间切换．
+ 浏览器存储 系统对创建的文章，都会在浏览器存储上进行保存。包括像evernote/印象笔记/github/dropbox等导入的文章，也都会保存一份副本，并创建一个标识，表示跟哪些第三方存储关联。
+标题，标签 文章标题的处理规则：如果文章内存在元数据title，则系统自动使用元数据内的title做为标题。如果文章未使用到元数据功能，用户可以通过维护文章信息按钮，修改标题。标签tags的规则也跟标题一样。
+附件 文章使用./做为附件的引用标识。对于图片，音频，视频，附件等链接的处理，系统只处理以./开头的链接，并转换成附件真实的地址进行显示。用户可以通过工具栏的插入图片，插入音频，插入视频，插入附件等按钮上传附件。
+ evernote/印象笔记 小书匠编辑器提供对evernote/印象笔记的支持，下面的使用说明默认用户已经完成了evernote/印象笔记的绑定操作，并将当前的工作平台切换到evernote/印象笔记下。
+新建 通过新建按钮后，创建的文章将自动关联到evernote/印象笔记上(注:这里仅仅是在文章上创建一个关联的标识，只有当用户保存后，才能在服务器上查看到新的笔记)
+打开 点击笔记，系统将自动把笔记导入，并将当前文章切换为导入的笔记内容。导入的文章自动与evernote/印象笔记上的笔记关联，下次再点击该笔记时，将直接从浏览器存储上打开。用户可以通过切换存储平台浏览器存储，来删除该缓存的文件。导入的笔记如果本地没有缓存，系统将对服务器上的笔记进行判断，如果笔记是通过小书匠编辑器进行保存，并且文章在保存后没有被操作过，则系统自动使用保存时附带的markdown附件做为文章内容，重新导入。如果笔记已经被修改，或者笔记不是通过小书匠编辑器进行保存的，系统将自动将文章转换成markdown格式。
+保存 对于新创建的文章，用户可以直接保存ctrl+s，系统将弹出一个选择笔记本的窗口，确认后，系统将保存当前文章到evernote/印象笔记上。（在弹出窗口上选择笔记本时，如果用户选择了笔记，系统将覆盖该笔记）
+对于已经存在的文章，但还没有保存到evernote/印象笔记，用户可以通过另存为ctrl+shift+s将当前文章保存到evernote/印象笔记上。
+不管是保存，还是另存为，保存成功后，系统都将自动对当前文章与evernote/印象笔记上的笔记进行关联。下次保存时ctrl+s系统将自动同步保存到evernote/印象笔记上。
+删除 系统不提供删除操作，用户需要自己到evernote/印象笔记端删除，如果本地缓存了笔记，可以通过浏览器存储删除缓存。
+重命名 直接修改元数据title，如果文章内未使用元数据功能，可通过浏览器存储里的修改文章信息进行修改</description>
+    </item>
+    
+    <item>
+      <title>小书匠语法使用手册</title>
+      <link>https://haidongsong.github.io/posts/%E5%B0%8F%E4%B9%A6%E5%8C%A0%E8%AF%AD%E6%B3%95%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/%E5%B0%8F%E4%B9%A6%E5%8C%A0%E8%AF%AD%E6%B3%95%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</guid>
+      <description>[toc!?theme=gray&amp;amp;depth=4]
+常用语法  标题 这是 H1 一级标题 ====== 这是 H2 二级标题 ------ # 这是 H1 一级标题 ## 这是 H2 二级标题 ### 这是 H3 三级标题 #### 这是 H4 四级标题 ##### 这是 H5 五级标题 ###### 这是 H6 六级标题 快捷键: [ctrl + h]
+列表 无序列表 * 项目1 * 子项目1.1 * 子项目1.2 * 子项目1.2.1 * 项目2 * 项目3 + 项目1 + 子项目1.1 + 子项目1.2 + 子项目1.2.1 + 项目2 + 项目3 - 项目1 - 子项目1.1 - 子项目1.</description>
+    </item>
+    
+    <item>
+      <title>工作记录</title>
+      <link>https://haidongsong.github.io/posts/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC/</guid>
+      <description>[toc]
+工作记录 jan 30 gantt dateFormat YYY-MM-DD-HH title 学习计划 section 1 craw: 2020-01-30-00, 6h section 2 django: 2020-01-30-18, 6h section 3 mongodb: 2020-01-31-00, 6h </description>
+    </item>
+    
+    <item>
+      <title>工作记录</title>
+      <link>https://haidongsong.github.io/posts/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/</guid>
+      <description>[toc]
+工作记录 jan 30 gantt dateFormat YYY-MM-DD-HH title 学习计划 section 1 craw: 2020-01-30-00, 6h section 2 django: 2020-01-30-18, 6h section 3 mongodb: 2020-01-31-00, 6h </description>
+    </item>
+    
+  </channel>
+</rss>

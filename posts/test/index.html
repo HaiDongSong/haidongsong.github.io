@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+Test
+</title>
+
+    
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+
+  
+  <meta name="author" content="宋海东" />
+  <meta name="description" content="[toc]
+APP抓取 环境搭建 安装fiddler  设置switchypmega后，没有办法联网．不设置抓不到数据  genymotion的安装和填坑指南   下载死慢死慢　７ｋ左右
+  已经解决（突然就好了）．．．可能网络问题，等等就好，神经病一样的网络．
+  附件提供下载包
+  # 安装virtualbox sudo apt install virtualbox -y cd ~/Downloads/ chmod u&#43;x ./genymotion-3.0.2-linux_x64.bin sudo ./genymotion-3.0.2-linux_x64.bin -d ~/opt #起别名 #让命令别名永久生效： gedit ~/.bashrc 在~/bashrc文件中追加alias genymotion=&amp;quot;~/opt/genymotion/genymotion&amp;rdquo; ,再source即可立即生效。 https://pan.baidu.com/s/1kUAftyR
+解决镜像下载慢的问题  genymotion默认的路径是~/.Genymobile, 这个文件夹下有个日志文件genymotion.log。或者全局搜索cd / &amp;amp;&amp;amp; sudo find ./ -name Genymobile，查看genymotion.log：vim - - genymotion.log, 然后找到类似Starting download of http://dl.genymotion.com/dists/5.0.0/ova/genymotion_vbox86p_5.0_170928_172212.ova （在最后几行），把这个地址copy出来去浏览器下载。 下载后将.ova文件cp到~/.Genymotion/Genymotion/ova/下，重新操作gui配置镜像，发现可以直接用了．  解决拖拽不能安装apk问题  下载附件genymotion-arm-translation_v1.1.zip 启动genymotion,在手机界面把这个zip文件拖到手机屏幕上,点确定安装,之后提示重启,重启之后，就不会有兼容性的问题了（安卓9.0版本不行，７．１之前的都可以，其他未作测试）   解决安装应用不兼容  下载附件Genymotion-ARM-Translation ." />
+
+
+
+<meta name="generator" content="Hugo 0.67.1" />
+
+<link rel="canonical" href="https://haidongsong.github.io/posts/test/" />
+
+
+<meta property="og:title" content="Test" />
+<meta property="og:description" content="[toc]
+APP抓取 环境搭建 安装fiddler  设置switchypmega后，没有办法联网．不设置抓不到数据  genymotion的安装和填坑指南   下载死慢死慢　７ｋ左右
+  已经解决（突然就好了）．．．可能网络问题，等等就好，神经病一样的网络．
+  附件提供下载包
+  # 安装virtualbox sudo apt install virtualbox -y cd ~/Downloads/ chmod u&#43;x ./genymotion-3.0.2-linux_x64.bin sudo ./genymotion-3.0.2-linux_x64.bin -d ~/opt #起别名 #让命令别名永久生效： gedit ~/.bashrc 在~/bashrc文件中追加alias genymotion=&quot;~/opt/genymotion/genymotion&rdquo; ,再source即可立即生效。 https://pan.baidu.com/s/1kUAftyR
+解决镜像下载慢的问题  genymotion默认的路径是~/.Genymobile, 这个文件夹下有个日志文件genymotion.log。或者全局搜索cd / &amp;&amp; sudo find ./ -name Genymobile，查看genymotion.log：vim - - genymotion.log, 然后找到类似Starting download of http://dl.genymotion.com/dists/5.0.0/ova/genymotion_vbox86p_5.0_170928_172212.ova （在最后几行），把这个地址copy出来去浏览器下载。 下载后将.ova文件cp到~/.Genymotion/Genymotion/ova/下，重新操作gui配置镜像，发现可以直接用了．  解决拖拽不能安装apk问题  下载附件genymotion-arm-translation_v1.1.zip 启动genymotion,在手机界面把这个zip文件拖到手机屏幕上,点确定安装,之后提示重启,重启之后，就不会有兼容性的问题了（安卓9.0版本不行，７．１之前的都可以，其他未作测试）   解决安装应用不兼容  下载附件Genymotion-ARM-Translation ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://haidongsong.github.io/posts/test/" />
+<meta property="article:published_time" content="2020-03-16T16:34:41+08:00" />
+<meta property="article:modified_time" content="2020-03-16T16:34:41+08:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Test"/>
+<meta name="twitter:description" content="[toc]
+APP抓取 环境搭建 安装fiddler  设置switchypmega后，没有办法联网．不设置抓不到数据  genymotion的安装和填坑指南   下载死慢死慢　７ｋ左右
+  已经解决（突然就好了）．．．可能网络问题，等等就好，神经病一样的网络．
+  附件提供下载包
+  # 安装virtualbox sudo apt install virtualbox -y cd ~/Downloads/ chmod u&#43;x ./genymotion-3.0.2-linux_x64.bin sudo ./genymotion-3.0.2-linux_x64.bin -d ~/opt #起别名 #让命令别名永久生效： gedit ~/.bashrc 在~/bashrc文件中追加alias genymotion=&quot;~/opt/genymotion/genymotion&rdquo; ,再source即可立即生效。 https://pan.baidu.com/s/1kUAftyR
+解决镜像下载慢的问题  genymotion默认的路径是~/.Genymobile, 这个文件夹下有个日志文件genymotion.log。或者全局搜索cd / &amp;&amp; sudo find ./ -name Genymobile，查看genymotion.log：vim - - genymotion.log, 然后找到类似Starting download of http://dl.genymotion.com/dists/5.0.0/ova/genymotion_vbox86p_5.0_170928_172212.ova （在最后几行），把这个地址copy出来去浏览器下载。 下载后将.ova文件cp到~/.Genymotion/Genymotion/ova/下，重新操作gui配置镜像，发现可以直接用了．  解决拖拽不能安装apk问题  下载附件genymotion-arm-translation_v1.1.zip 启动genymotion,在手机界面把这个zip文件拖到手机屏幕上,点确定安装,之后提示重启,重启之后，就不会有兼容性的问题了（安卓9.0版本不行，７．１之前的都可以，其他未作测试）   解决安装应用不兼容  下载附件Genymotion-ARM-Translation ."/>
+
+
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/site.css" />
+
+
+<style>
+  a {
+    color: seagreen !important;
+  }
+</style>
+
+
+
+<style>
+  .inverted a {
+     color: darkseagreen !important;
+  }
+</style>
+
+
+  </head>
+
+  
+  <body style="background: black;">
+  
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          
+<nav class="ui secondary inverted menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/haidongsong.github.io\/'"></i>
+  </div>
+  <div class="item">
+    <i id="theme-switch" class="large link icon" onclick="themeSwitch()"></i>
+  </div>
+</nav>
+
+          
+<div class="ui centered relaxed grid dream-grid">
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single">
+
+    <section class="ui top attached segment" id="dream-save-post-as-img">
+      <header style="margin-top: 0 !important;">
+        <h2 class="ui header">
+          Test
+          <div class="sub header">@ 宋海东 · Monday, Mar 16, 2020 · 3 minute read · Update at Mar 16, 2020</div>
+        </h2>
+      </header>
+      <article style="margin-top: 2rem;"><p>[toc]</p>
+<h1 id="app抓取">APP抓取</h1>
+<h2 id="环境搭建">环境搭建</h2>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580545532069.png" alt="enter description here"></p>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580545532240.png" alt="enter description here"></p>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580545532489.png" alt="enter description here"></p>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580545532242.png" alt="enter description here"></p>
+<h3 id="安装fiddler">安装fiddler</h3>
+<ul>
+<li>设置switchypmega后，没有办法联网．不设置抓不到数据</li>
+</ul>
+<h3 id="genymotion的安装和填坑指南">genymotion的安装和填坑指南</h3>
+<ul>
+<li>
+<p>下载死慢死慢　　７ｋ左右</p>
+</li>
+<li>
+<p>已经解决（突然就好了）．．．可能网络问题，等等就好，神经病一样的网络．</p>
+</li>
+<li>
+<p>附件提供下载包</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 安装virtualbox</span>
+sudo apt install virtualbox -y
+
+cd ~/Downloads/
+ chmod u+x ./genymotion-3.0.2-linux_x64.bin
+ sudo ./genymotion-3.0.2-linux_x64.bin -d ~/opt
+ 
+ <span style="color:#75715e">#起别名</span>
+
+<span style="color:#75715e">#让命令别名永久生效：</span>
+
+gedit ~/.bashrc
+
+</code></pre></div><p>在~/bashrc文件中追加alias genymotion=&quot;~/opt/genymotion/genymotion&rdquo; ,再source即可立即生效。
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580545532455.png" alt="enter description here">
+<a href="https://pan.baidu.com/s/1kUAftyR">https://pan.baidu.com/s/1kUAftyR</a></p>
+<h4 id="解决镜像下载慢的问题">解决镜像下载慢的问题</h4>
+<ul>
+<li>genymotion默认的路径是~/.Genymobile, 这个文件夹下有个日志文件genymotion.log。或者全局搜索cd / &amp;&amp; sudo find ./ -name Genymobile，查看genymotion.log：vim - -    genymotion.log,</li>
+<li>然后找到类似Starting download of <a href="http://dl.genymotion.com/dists/5.0.0/ova/genymotion_vbox86p_5.0_170928_172212.ova">http://dl.genymotion.com/dists/5.0.0/ova/genymotion_vbox86p_5.0_170928_172212.ova</a> （在最后几行），把这个地址copy出来去浏览器下载。</li>
+<li>下载后将.ova文件cp到~/.Genymotion/Genymotion/ova/下，重新操作gui配置镜像，发现可以直接用了．</li>
+</ul>
+<h4 id="解决拖拽不能安装apk问题">解决拖拽不能安装apk问题</h4>
+<ul>
+<li>下载附件genymotion-arm-translation_v1.1.zip</li>
+<li>启动genymotion,在手机界面把这个zip文件拖到手机屏幕上,点确定安装,之后提示重启,重启之后，就不会有兼容性的问题了（安卓9.0版本不行，７．１之前的都可以，其他未作测试）</li>
+<li></li>
+</ul>
+<h3 id="解决安装应用不兼容">解决安装应用不兼容</h3>
+<ul>
+<li>下载附件Genymotion-ARM-Translation .zip</li>
+<li>启动genymotion,在手机界面把这个zip文件拖到手机屏幕上,点确定安装,之后，重启即可</li>
+</ul>
+<h4 id="想多了填了很多坑了ａｐｐ终于能安装了但是打开过一会后出错">想多了，填了很多坑了，ａｐｐ终于能安装了，但是打开过一会后出错</h4>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580545532238.png" alt="enter description here">
+算了，我还是回ｗｉｎｄｏｗｓ下用夜神模拟器吧．（浪费６个小时搞这个鸡儿，以后还是多听过来人的建议吧）</p>
+<h2 id="安装mitmproxy">安装mitmproxy</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pip3.7 install mitmproxy
+</code></pre></div><ul>
+<li>
+<p>出错</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">......
+Collecting idna&gt;<span style="color:#f92672">=</span>2.1
+  Downloading idna-2.8-py2.py3-none-any.whl <span style="color:#f92672">(</span><span style="color:#ae81ff">58</span> kB<span style="color:#f92672">)</span>
+     |████████████████████████████████| <span style="color:#ae81ff">58</span> kB <span style="color:#ae81ff">75</span> kB/s 
+Collecting pycparser
+  Downloading pycparser-2.19.tar.gz <span style="color:#f92672">(</span><span style="color:#ae81ff">158</span> kB<span style="color:#f92672">)</span>
+     |████████████████████████████████| <span style="color:#ae81ff">158</span> kB <span style="color:#ae81ff">72</span> kB/s 
+Collecting MarkupSafe&gt;<span style="color:#f92672">=</span>0.23
+  Downloading MarkupSafe-1.1.1-cp37-cp37m-manylinux1_x86_64.whl <span style="color:#f92672">(</span><span style="color:#ae81ff">27</span> kB<span style="color:#f92672">)</span>
+Installing collected packages: pyparsing, passlib, pycparser, cffi, zstandard, six, protobuf, click, tornado, Brotli, pyasn1, publicsuffix2, ldap3, hpack, hyperframe, h2, asn1crypto, idna, cryptography, pyOpenSSL, blinker, ruamel.yaml.clib, ruamel.yaml, urwid, pyperclip, h11, wsproto, Werkzeug, MarkupSafe, Jinja2, itsdangerous, flask, kaitaistruct, sortedcontainers, mitmproxy
+ERROR: Could not install packages due to an EnvironmentError: <span style="color:#f92672">[</span>Errno 13<span style="color:#f92672">]</span> Permission denied: <span style="color:#e6db74">&#39;/home/dylan/.local/lib/python3.7/site-packages/pyparsing.py&#39;</span>
+Check the permissions.
+  
+</code></pre></div><p>这是</p>
+</li>
+<li>
+<p>解决方法</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo chown -R $USER  ~/.local
+</code></pre></div><h2 id="mitmproxy使用">mitmproxy使用</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mitmproxy
+  
+mitmweb
+mitmdump -w test.txt
+mitmdump -s test.py -p <span style="color:#ae81ff">8888</span>
+  
+</code></pre></div><ul>
+<li>报错（能抓取数据，但是膈应）
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581592436700.png" alt="enter description here"></li>
+</ul>
+<h3 id="chrom添加代理">chrom添加代理</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580545532243.png" alt="enter description here"></p>
+</li>
+</ul>
+<h4 id="how-to-install-on-chrome-on-debianubuntu">How to install on Chrome on Debian/Ubuntu</h4>
+<ul>
+<li>Using Chrome, hit a page on your server via HTTPS and continue past the red warning page (assuming you haven&rsquo;t done this already)</li>
+<li>Open up Chrome Settings &gt; Show advanced settings &gt; HTTPS/SSL &gt; Manage Certificates</li>
+<li>Click the Authorities tab and scroll down to find your certificate under the Organization Name that you gave to the certificate</li>
+<li>Select it, click Edit (NOTE: in recent versions of Chrome, the button is now &ldquo;Advanced&rdquo; instead of &ldquo;Edit&rdquo;), check all the boxes and click OK. You may have to restart Chrome
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580545532255.png" alt="enter description here"></li>
+</ul>
+<h4 id="how-to-install-on-ubuntu-manually">How to install on Ubuntu (Manually)</h4>
+<ul>
+<li>Create a directory for extra CA certificates in /usr/share/ca-certificates:
+$ sudo mkdir /usr/share/ca-certificates/extra</li>
+<li>Copy the CA mitmproxy.crt file to this directory:
+$ sudo cp mitmproxy.crt /usr/share/ca-certificates/extra/mitmproxy.crt</li>
+<li>Let Ubuntu add the mitmproxy.crt file&rsquo;s path relative to /usr/share/ca-certificates to /etc/ca-certificates.conf:
+$ sudo dpkg-reconfigure ca-certificates</li>
+<li>In case of a .pem file on Ubuntu, it must first be converted to a .crt file:
+$ openssl x509 -in foo.pem -inform PEM -out foo.crt</li>
+</ul>
+<h3 id="安装packet-capture">安装packet capture</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580545532477.png" alt="enter description here"></p>
+<h2 id="appium">appium</h2>
+<ul>
+<li>下载地址</li>
+<li><a href="http://appium.io/">http://appium.io/</a>
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580545532475.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580545532260.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580545532339.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580545532257.png" alt="enter description here"></li>
+</ul>
+<h2 id="doker的安装">doker的安装</h2>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580548728337.png" alt="enter description here"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker --version
+docker run hello-world
+docker run -it ubuntu bash
+exit
+
+<span style="color:#75715e">#查看当前容器</span>
+docker pa -a
+<span style="color:#75715e">#查看当前镜像</span>
+docker image ls
+docker rmi hello-world
+docker rm ...
+docker rmi hello-world
+</code></pre></div><h2 id="抓包工具的使用">抓包工具的使用</h2>
+<h3 id="flidder的使用">flidder的使用</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580558149332.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580558371218.png" alt="enter description here"></p>
+<h3 id="模拟器安装证书设置fiddler抓取移动端数据">模拟器安装证书，设置fiddler抓取移动端数据</h3>
+<ul>
+<li><!-- raw HTML omitted -->设置好代理后没网，需要关闭win10防火墙，重启fiddler。<!-- raw HTML omitted -->
+参考文档
+<a href="https://blog.csdn.net/jss19940414/article/details/89875043">https://blog.csdn.net/jss19940414/article/details/89875043</a>
+误导文档
+<a href="https://www.jianshu.com/p/17abc8214281">https://www.jianshu.com/p/17abc8214281</a></li>
+</ul>
+<h3 id="mitmproxy移动设备安装证书">mitmproxy移动设备安装证书</h3>
+<p>和fiddler差不多，参考fiddler</p>
+<ul>
+<li>使用</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#清除</span>
+z
+<span style="color:#75715e">#返回</span>
+q
+<span style="color:#75715e">#过滤</span>
+f
+<span style="color:#75715e"># [f:!(~c 200)]，再次f,返回</span>
+
+i
+<span style="color:#75715e">#设置断点</span>
+a
+<span style="color:#75715e">#重新访问</span>
+</code></pre></div><ul>
+<li>mitmproxy过滤数据
+返回200状态的数据
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580604360292.png" alt="返回200状态的数据">
+返回baidu的数据
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580604898107.png" alt="enter description here"></li>
+</ul>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580605729976.png" alt="enter description here"></p>
+<ul>
+<li>
+<p>mitmdump的使用</p>
+</li>
+<li>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580606827022.png" alt="enter description here"></p>
+</li>
+<li>
+<p>test.py</p>
+</li>
+<li>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580606865550.png" alt="enter description here"></p>
+</li>
+<li>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580607971659.png" alt="enter description here"></p>
+</li>
+</ul>
+<h2 id="app数据抓取">app数据抓取</h2>
+<h2 id="移动端自动化测试工具appium的使用">移动端自动化测试工具appium的使用</h2>
+<h3 id="安装jdk">安装jdk</h3>
+<ul>
+<li><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></li>
+<li>由于uiautomator需要jdk8，所以不要安装高版本。</li>
+<li>根目录新建文件夹
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580858132330.png" alt="enter description here"></li>
+<li>配置环境变量</li>
+</ul>
+<p>变量名：Path
+变量值：C:\ProgramData\Oracle\Java\javapath;%java_home%\bin;%java_home%\jre\bin
+新建
+变量名：JAVA_HOME
+变量值：C:\java\jdk
+新建
+变量名：ClassPath
+变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580858094475.png" alt="enter description here"></p>
+<ul>
+<li>打开cmd输入java测试是否安装成功</li>
+</ul>
+<h3 id="安装sdk">安装sdk</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580865163003.png" alt="enter description here"></p>
+<ul>
+<li><a href="http://tools.android-studio.org/index.php/sdk">http://tools.android-studio.org/index.php/sdk</a></li>
+<li>配置环境变量</li>
+<li></li>
+</ul>
+<p>ANDROID_HOME	C:\SDK
+PATH	;%ANDROID_HOME%\platform-tools;%ANDROID_HOME%\tools;</p>
+<ul>
+<li>打开sdk manager.exe，安装必要的包，如果安装速度很慢注意更换安装源</li>
+</ul>
+<h3 id="adb工具的使用">adb工具的使用</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580869308561.png" alt="enter description here"></p>
+<ul>
+<li>使用adb命令工具，需要移动客户端（手机）开启开发者模式，并允许USB调试</li>
+</ul>
+<p><!-- raw HTML omitted -->注意，adb工具环境变量中最好不要起别名，很可能无法被系统识别<!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">adb start-server
+adb adb version
+adb devices
+
+netstat -ano<span style="color:#f92672">}</span>findstr <span style="color:#e6db74">&#34;5037&#34;</span>
+taskkill -pid pid_num -f
+
+adb -s devicename shell
+adb -s devicename install filename.apk
+adb -s devicename uninstall filename.apk
+
+<span style="color:#75715e">#如果adb devices没有设备，也可以</span>
+adb connect 127.0.0.1:62025
+adb devices
+
+adb shell pm list package
+</code></pre></div><p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581512783604.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581512924311.png" alt="enter description here">
+获取appium参数方式的两种方式</p>
+<ul>
+<li>1
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581512623810.png" alt="enter description here"></li>
+<li>2
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581512702357.png" alt="enter description here">
+获取appActivity：aapt dump badging xxxx.apk | find &ldquo;launchable-activity&rdquo;
+获取appPackage：aapt dump badging xxxx.apk | find &ldquo;package: name=&rdquo;</li>
+</ul>
+<h2 id="微信公众号的爬取">微信公众号的爬取</h2>
+<ul>
+<li>手机端用fildder和charles无法获取数据（猜测可能是微信使用了自己的验证规则）</li>
+<li>抓取最佳方案为通过个人公众号发布超链接文章获取其公众号文章接口
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1580964299090.png" alt="enter description here"></li>
+<li>经过ssl pinning的突破后，可以爬取到数据，但是公众号的历史数据只能爬到图片，点击进入文章中，只能爬取到评论和两个js文件。。。
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581061281925.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581061308069.png" alt="enter description here">
+-😢😢😢</li>
+</ul>
+<h2 id="fiddler抓不到包分析">fiddler抓不到包分析</h2>
+<p><a href="https://blog.csdn.net/wangjun5159/article/details/52202059">https://blog.csdn.net/wangjun5159/article/details/52202059</a></p>
+<h2 id="百家号爬取">百家号爬取</h2>
+<ul>
+<li>charles redmi k20pro无法安装charles的证书：提示无法打开改文件，因为文件内容无法读取。。。</li>
+<li>百度app不信任fiddler的证书，安装证书后会提示。。。</li>
+<li>使用fiddlercertmaker.exe后，手机真机可以正常访问，但是抓不到包。
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581074677588.png" alt="enter description here"></li>
+<li>可以返回主页html，但是加载不出来界面</li>
+<li>手机真机
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581074988265.png" alt="enter description here"></li>
+<li>接下来是xposed just trust me后</li>
+</ul>
+<h2 id="夜神android版本的选取">夜神android版本的选取</h2>
+<ul>
+<li>4.4.2 无法启动微信，会闪退</li>
+<li>7.几的百度app运行不稳定，会停止运行</li>
+<li>5.几能正常运行两款app，但是xposed后，运行一会出现停止运行（考虑可能是xposed影响或者内存不够，配置低。）</li>
+</ul>
+<h2 id="appium-使用自动化爬取一点资讯">appium 使用自动化爬取一点资讯</h2>
+<ul>
+<li>appium客户端的安装
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581598945918.png" alt="enter description here"></li>
+</ul>
+<h3 id="多任务段抓取">多任务段抓取</h3>
+<ul>
+<li>appium设置及注意</li>
+<li><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581645875334.png" alt="enter description here"></li>
+<li>mitmdump 设置代理
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581645493493.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581645722181.png" alt="enter description here"></li>
+<li>运行两个模拟器的时候报错
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error in building: Ill-formed XML document (multiple root elements detected). Try changing the &lsquo;normalizeTagNames&rsquo; driver setting to &lsquo;true&rsquo; in order to workaround the problem.</li>
+</ul>
+<p>-还有这个错
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of &lsquo;uiautomator2ServerLaunchTimeout&rsquo; capability.
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1581914993828.png" alt="enter description here"></p>
+</article>
+    </section>
+
+    <footer class="ui attached segment dream-tags">
+      
+          <a class="ui label">No Tags</a>
+      
+      <div
+        class="ui label"
+        style="float: right; background: #1b1c1d !important; cursor: pointer;"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i> Save as image
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+  <div class="sixteen wide mobile sixteen wide tablet four wide computer column">
+    <article class="dream-header">
+  <section class="ui top attached center aligned segment">
+    <div class="ui small circular image">
+      
+        <img src="/img/avatar.jpg">
+      
+    </div>
+
+    <h3 class="ui header">Bob Dylan&#39;s blog<div class="sub header" style="margin-top: 0.5rem;">与其感慨路难行，不如马上出发</div>
+    </h3>
+
+    <div class="ui horizontal list">
+      
+      <a class="item" href="/posts">
+        <i class="archive icon" title="Archives"></i>
+      </a>
+      
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+    </div>
+  </section>
+
+  
+  <section class="ui attached center aligned segment dream-tags">
+    
+      <a class="ui label" href="/tags/markdown" title="markdown">markdown</a>
+    
+      <a class="ui label" href="/tags/nihao" title="nihao">nihao</a>
+    
+      <a class="ui label" href="/tags/python" title="python">python</a>
+    
+      <a class="ui label" href="/tags/tag1" title="tag1">tag1</a>
+    
+      <a class="ui label" href="/tags/tag2" title="tag2">tag2</a>
+    
+      <a class="ui label" href="/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C" title="使用手册">使用手册</a>
+    
+      <a class="ui label" href="/tags/%E5%B0%8F%E4%B9%A6%E5%8C%A0" title="小书匠">小书匠</a>
+    
+      <a class="ui label" href="/tags/%E7%88%AC%E8%99%AB" title="爬虫">爬虫</a>
+    
+      <a class="ui label" href="/tags/%E8%AF%AD%E6%B3%95" title="语法">语法</a>
+    
+  </section>
+  
+
+  
+  <section class="ui attached segment dream-categories">
+    <div class="ui accordion">
+      
+        <div class="title">
+          <i class="dropdown icon"></i>
+          <a href="/categories/category1" class="item">category1</a>
+        </div>
+        <div class="content">
+          <div class="ui list">
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/test-img/" class="item">Test Img</a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/ppx/" class="item">Ppx</a>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      
+    </div>
+  </section>
+  
+
+  <section class="ui bottom attached center aligned segment">
+      
+      <p>© 2020 Hugo Theme Dream</p>
+      
+      <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+  </section>
+</article>
+
+  </div>
+</div>
+
+        </section>
+        <section class="back">
+          
+<nav class="ui secondary inverted menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/haidongsong.github.io\/'"></i>
+  </div>
+  <div class="item">
+    <i id="theme-switch" class="large link icon" onclick="themeSwitch()"></i>
+  </div>
+</nav>
+
+          <div class="ui centered relaxed grid dream-grid dream-back">
+  
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article>
+      <div class="ui top attached segment">
+        <h3 class="ui header">Social Links</h3>
+      </div>
+      <div class="ui attached segment">
+        <nav class="ui secondary menu dream-menu">
+          
+            <div class="item">
+              <a href="mailto:shdqrn1314@gmail.com">
+                <i class="large mail icon" title="email"></i>
+              </a>
+            </div>
+          
+
+          
+            <div class="item">
+              <a href="https://github.com/haidongsong" target="_blank">
+                <i class="large github icon" title="github"></i>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+          
+        </nav>
+      </div>
+    </article>
+  </section>
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+  </section>
+
+  
+  
+</div>
+
+        </section>
+      </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+
+
+
+  </body>
+</html>
