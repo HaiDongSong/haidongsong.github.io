@@ -2,20 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nihao on Hugo Theme Dream</title>
-    <link>https://haidongsong.github.io/tags/nihao/</link>
+    <link>https://example.com/tags/nihao/</link>
     <description>Recent content in nihao on Hugo Theme Dream</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://haidongsong.github.io/tags/nihao/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/nihao/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>readme</title>
-      <link>https://haidongsong.github.io/posts/readme/</link>
+      <title>fuck you</title>
+      <link>https://example.com/posts/nimabi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://haidongsong.github.io/posts/readme/</guid>
+      <guid>https://example.com/posts/nimabi/</guid>
+      <description>欢迎使用小书匠编辑器 nihao</description>
+    </item>
+    
+    <item>
+      <title>readme</title>
+      <link>https://example.com/posts/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/readme/</guid>
       <description>欢迎使用小书匠编辑器 nihao</description>
     </item>
     

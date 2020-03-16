@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>使用手册 on Hugo Theme Dream</title>
-    <link>https://haidongsong.github.io/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</link>
+    <link>https://example.com/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</link>
     <description>Recent content in 使用手册 on Hugo Theme Dream</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://haidongsong.github.io/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>小书匠编辑器使用手册</title>
-      <link>https://haidongsong.github.io/posts/%E5%B0%8F%E4%B9%A6%E5%8C%A0%E7%BC%96%E8%BE%91%E5%99%A8%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</link>
+      <link>https://example.com/posts/%E5%B0%8F%E4%B9%A6%E5%8C%A0%E7%BC%96%E8%BE%91%E5%99%A8%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://haidongsong.github.io/posts/%E5%B0%8F%E4%B9%A6%E5%8C%A0%E7%BC%96%E8%BE%91%E5%99%A8%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</guid>
+      <guid>https://example.com/posts/%E5%B0%8F%E4%B9%A6%E5%8C%A0%E7%BC%96%E8%BE%91%E5%99%A8%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</guid>
       <description>[toc!]
 概要 小书匠编辑器是一款专为markdown写作而设计的编辑器。
 主要功能  专为markdown写作设计的文档编辑器，让用户心无旁骛的进行创作。 多种编辑模式。单栏编辑，双栏编辑，三栏编辑，全屏写作，全屏阅读&amp;hellip;想怎么切换，就怎么切换，就是这样随心所欲。 多种编辑器实现。codemirror编辑器（提供vim,emacs按键，行专注等），ace编辑器（提供vim，emacs按键绑定，显示行号），轻量编辑器，CJK竖排编辑器 多种主题选择。包括编辑器主题，预览区代码高亮主题，及预览区用户自定义css。 丰富的语法支持。不仅提供了常用的commanmarkdown语法，还提供了许多有用的扩展语法，比如==Latex公式==，==表格==, ==目录==， ==脚注==, ==视频==, ==音频==, ==附件==, ==checklist==, ==流程图==等。更多语法可查看&amp;lt;小书匠语法使用手册&amp;gt; 代码块文字格式语法。语法可查看&amp;lt;小书匠语法使用手册&amp;gt; 第三方同步。==浏览器存储==, ==本地文件系统存储==, ==dropbox==, ==evernote==, ==印象笔记==,==gitoschina==, ==为知笔记==, ==github==等多种存储方案，保证了用户数据的安全，也让用户在存储方案上有了更多的选择。 支持evernote，印象笔记。提供双向操作，可以将文章保存到evernote/印象笔记上，也可以从evernote/印象笔记上导入数据。同时提供标签，附件，图片，待办等相关处理。 强大的文件管理功能。文件信息，标签，附件，音频，视频，图片管理。 发布功能。 支持将文章发布到博客平台上。 邮件发送功能。 sourceMap对照功能。方便在源markdown文件和生成的html文件上进行比较，特别适合markdown初学者使用，了解每一个markdown解析产生的结果，也适用于文章后期的校对上。 ppt。 ppt跨屏演示 pdf预览 typewriter scrolling autocomplete 和 snippets 功能  离线版下载地址 http://soft.xiaoshujiang.com
