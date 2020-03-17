@@ -67,6 +67,34 @@ sudo dpkg -i teamviewer* #出错或者无法启动 sudo apt install -f mongodb�
     </item>
     
     <item>
+      <title>pycharm2018激活终极办法</title>
+      <link>https://haidongsong.github.io/posts/pycharm2018%E6%BF%80%E6%B4%BB%E7%BB%88%E6%9E%81%E5%8A%9E%E6%B3%95/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/pycharm2018%E6%BF%80%E6%B4%BB%E7%BB%88%E6%9E%81%E5%8A%9E%E6%B3%95/</guid>
+      <description>&amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-family:&amp;amp;quot;PingFang SC&amp;amp;quot;, &amp;amp;quot;Microsoft YaHei&amp;amp;quot;, SimHei, Arial, SimSun;word-break:break-all;&amp;quot;&amp;gt;   &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;padding-bottom:16px;margin-top:36px;border-bottom:1px solid rgb(227, 227, 227);&amp;quot;&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-size:12px;color:rgb(153, 153, 153);&amp;quot;&amp;gt; 版权声明：本文为博主原创文章，未经博主允许不得转载。	https://blog.csdn.net/qq_22703355/article/details/79268025	&amp;lt;/div&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;margin-bottom:8px;font-size:12px;margin-top:18px;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;box-sizing:inherit;outline:0px;color:rgb(77, 77, 77);&amp;quot;&amp;gt;文章标签：&amp;lt;/span&amp;gt; &amp;lt;a href=&amp;quot;http://so.csdn.net/so/search/s.do?q=python&amp;amp;amp;t=blog&amp;quot; target=&amp;quot;_blank&amp;quot; style=&amp;quot;color:rgb(77, 77, 77);cursor:pointer;text-decoration:none;outline:0px;box-sizing:inherit;display:inline-block;word-break:break-all;border:1px solid rgb(204, 204, 204);border-radius:100px;padding:0px 8px;text-align:center;line-height:24px;min-width:24px;height:24px;margin-right:8px;&amp;quot;&amp;gt;python	&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-size:12px;margin-bottom:0px;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;box-sizing:inherit;outline:0px;color:rgb(77, 77, 77);&amp;quot;&amp;gt;个人分类：&amp;lt;/span&amp;gt; &amp;lt;a href=&amp;quot;https://blog.csdn.net/qq_22703355/article/category/7387999&amp;quot; target=&amp;quot;_blank&amp;quot; style=&amp;quot;box-sizing:inherit;outline:0px;text-decoration:none;cursor:pointer;display:inline-block;margin-right:24px;color:rgb(200, 131, 38);word-break:break-all;&amp;quot;&amp;gt;python基础	&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;margin-top:8px;background:rgb(255, 255, 255);box-shadow:rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;&amp;quot;&amp;gt;&amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://blog.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu安装及Python环境的配置</title>
+      <link>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</guid>
+      <description>[toc]
+Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装 1.1 分区  查看系统BIOS模式 win+R, 输入msinfo32, 得到系统信息,这里我的BIOS模式是传统模式（MBR），所以这里以MBR为例  下载ubuntu系统 链接： https://www.ubuntu.com/download/desktop 这里LTS表示长期维护版本，也就2年。下面那个是最新版，根据需求喜好随便下载一个，这里我以ubuntu18.04 LTS为例  分出空闲空间 快捷键“win+X”-&amp;gt;“磁盘管理”-&amp;gt;“压缩卷”（Windows安装在固态硬盘则压缩固态硬盘，机械硬盘同理），压缩完之后会多出了一块“未分配空间”。我的固态是250G，我选择分108G（110592M）给Ubuntu，这里根据需要分就行，磁盘小分40g也够用。下图是我安装好双系统后被分出去的空间使用情况，刚分完108g是一块黑的   1.2 设置u盘启动  制作U盘启动盘 下载链接：https://rufus.ie/zh_CN.html 这里使用的是Rufus，选好下载的镜像，分区方案选择第一个（因为是装MBR的，UEFI就选第二个）其他默认就行  重启电脑 让自己的电脑从U盘启动，如果你的电脑是mbr格式，就不要以UEFI的格式进入，如果你的电脑是GPT格式，则必须以UEFI格式进入。我的是联想电脑，关机状态下，按开关键旁边的恢复按键即可进入BIOS菜单  1.3 安装ubuntu  install ubuntu 进入Boot menu选择界面，选择“Istall Ubuntu”，图形化的安装界面，软件暂时不要安装，继续，当出现要手动分盘符的时候，请选择“其它选项  分区 给108G空间进行分区操作，分配4个区间，分区时候选中空闲空间点下面加号 分区的时候如果碰到分区一块后无法再分，那是因为系统只能识别4块主分区，windows已经占了3个，可以先分其他区，再分主分区,一下是我的分区示例      目录 建议大小 格式 描述     / 50G ext4 根目录   swap 物理内存的两倍 swap 交换空间：交换分区相当于Windows中的“虚拟内存”，如果内存低的话（1-4G），物理内存的两倍，高点的话（8-16G）要么等于物理内存，要么物理内存+2g左右，   /boot 200M ext4 空间起始位置 分区格式为ext4 /boot 建议：应该大于400MB或1GB Linux的内核及引导系统程序所需要的文件，比如 vmlinuz initrd.</description>
+    </item>
+    
+    <item>
+      <title>投资</title>
+      <link>https://haidongsong.github.io/posts/%E6%8A%95%E8%B5%84/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/%E6%8A%95%E8%B5%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>操作三大数据库</title>
       <link>https://haidongsong.github.io/posts/%E6%93%8D%E4%BD%9C%E4%B8%89%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
       <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
@@ -123,25 +151,6 @@ sudo dpkg -i teamviewer* #出错或者无法启动 sudo apt install -f mongodb�
     </item>
     
     <item>
-      <title>pycharm2018激活终极办法</title>
-      <link>https://haidongsong.github.io/posts/pycharm2018%E6%BF%80%E6%B4%BB%E7%BB%88%E6%9E%81%E5%8A%9E%E6%B3%95/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://haidongsong.github.io/posts/pycharm2018%E6%BF%80%E6%B4%BB%E7%BB%88%E6%9E%81%E5%8A%9E%E6%B3%95/</guid>
-      <description>&amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-family:&amp;amp;quot;PingFang SC&amp;amp;quot;, &amp;amp;quot;Microsoft YaHei&amp;amp;quot;, SimHei, Arial, SimSun;word-break:break-all;&amp;quot;&amp;gt;   &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;padding-bottom:16px;margin-top:36px;border-bottom:1px solid rgb(227, 227, 227);&amp;quot;&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-size:12px;color:rgb(153, 153, 153);&amp;quot;&amp;gt; 版权声明：本文为博主原创文章，未经博主允许不得转载。	https://blog.csdn.net/qq_22703355/article/details/79268025	&amp;lt;/div&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;margin-bottom:8px;font-size:12px;margin-top:18px;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;box-sizing:inherit;outline:0px;color:rgb(77, 77, 77);&amp;quot;&amp;gt;文章标签：&amp;lt;/span&amp;gt; &amp;lt;a href=&amp;quot;http://so.csdn.net/so/search/s.do?q=python&amp;amp;amp;t=blog&amp;quot; target=&amp;quot;_blank&amp;quot; style=&amp;quot;color:rgb(77, 77, 77);cursor:pointer;text-decoration:none;outline:0px;box-sizing:inherit;display:inline-block;word-break:break-all;border:1px solid rgb(204, 204, 204);border-radius:100px;padding:0px 8px;text-align:center;line-height:24px;min-width:24px;height:24px;margin-right:8px;&amp;quot;&amp;gt;python	&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-size:12px;margin-bottom:0px;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;box-sizing:inherit;outline:0px;color:rgb(77, 77, 77);&amp;quot;&amp;gt;个人分类：&amp;lt;/span&amp;gt; &amp;lt;a href=&amp;quot;https://blog.csdn.net/qq_22703355/article/category/7387999&amp;quot; target=&amp;quot;_blank&amp;quot; style=&amp;quot;box-sizing:inherit;outline:0px;text-decoration:none;cursor:pointer;display:inline-block;margin-right:24px;color:rgb(200, 131, 38);word-break:break-all;&amp;quot;&amp;gt;python基础	&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;margin-top:8px;background:rgb(255, 255, 255);box-shadow:rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;&amp;quot;&amp;gt;&amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://blog.</description>
-    </item>
-    
-    <item>
-      <title>Ubuntu安装及Python环境的配置</title>
-      <link>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</guid>
-      <description>[toc]
-Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装 1.1 分区  查看系统BIOS模式 win+R, 输入msinfo32, 得到系统信息,这里我的BIOS模式是传统模式（MBR），所以这里以MBR为例  下载ubuntu系统 链接： https://www.ubuntu.com/download/desktop 这里LTS表示长期维护版本，也就2年。下面那个是最新版，根据需求喜好随便下载一个，这里我以ubuntu18.04 LTS为例  分出空闲空间 快捷键“win+X”-&amp;gt;“磁盘管理”-&amp;gt;“压缩卷”（Windows安装在固态硬盘则压缩固态硬盘，机械硬盘同理），压缩完之后会多出了一块“未分配空间”。我的固态是250G，我选择分108G（110592M）给Ubuntu，这里根据需要分就行，磁盘小分40g也够用。下图是我安装好双系统后被分出去的空间使用情况，刚分完108g是一块黑的   1.2 设置u盘启动  制作U盘启动盘 下载链接：https://rufus.ie/zh_CN.html 这里使用的是Rufus，选好下载的镜像，分区方案选择第一个（因为是装MBR的，UEFI就选第二个）其他默认就行  重启电脑 让自己的电脑从U盘启动，如果你的电脑是mbr格式，就不要以UEFI的格式进入，如果你的电脑是GPT格式，则必须以UEFI格式进入。我的是联想电脑，关机状态下，按开关键旁边的恢复按键即可进入BIOS菜单  1.3 安装ubuntu  install ubuntu 进入Boot menu选择界面，选择“Istall Ubuntu”，图形化的安装界面，软件暂时不要安装，继续，当出现要手动分盘符的时候，请选择“其它选项  分区 给108G空间进行分区操作，分配4个区间，分区时候选中空闲空间点下面加号 分区的时候如果碰到分区一块后无法再分，那是因为系统只能识别4块主分区，windows已经占了3个，可以先分其他区，再分主分区,一下是我的分区示例      目录 建议大小 格式 描述     / 50G ext4 根目录   swap 物理内存的两倍 swap 交换空间：交换分区相当于Windows中的“虚拟内存”，如果内存低的话（1-4G），物理内存的两倍，高点的话（8-16G）要么等于物理内存，要么物理内存+2g左右，   /boot 200M ext4 空间起始位置 分区格式为ext4 /boot 建议：应该大于400MB或1GB Linux的内核及引导系统程序所需要的文件，比如 vmlinuz initrd.</description>
-    </item>
-    
-    <item>
       <title>小书匠编辑器使用手册</title>
       <link>https://haidongsong.github.io/posts/%E5%B0%8F%E4%B9%A6%E5%8C%A0%E7%BC%96%E8%BE%91%E5%99%A8%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -175,15 +184,6 @@ preview_previewType元数据，可用的值为normal和presentation．用于文�
       <description>[toc!?theme=gray&amp;amp;depth=4]
 常用语法  标题 这是 H1 一级标题 ====== 这是 H2 二级标题 ------ # 这是 H1 一级标题 ## 这是 H2 二级标题 ### 这是 H3 三级标题 #### 这是 H4 四级标题 ##### 这是 H5 五级标题 ###### 这是 H6 六级标题 快捷键: [ctrl + h]
 列表 无序列表 * 项目1 * 子项目1.1 * 子项目1.2 * 子项目1.2.1 * 项目2 * 项目3 * + 项目1 + 子项目1.1 + 子项目1.2 + 子项目1.2.1 + 项目2 + 项目3 - 项目1 - 子项目1.</description>
-    </item>
-    
-    <item>
-      <title>投资</title>
-      <link>https://haidongsong.github.io/posts/%E6%8A%95%E8%B5%84/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://haidongsong.github.io/posts/%E6%8A%95%E8%B5%84/</guid>
-      <description></description>
     </item>
     
   </channel>
