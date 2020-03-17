@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans">
+<html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -287,19 +287,14 @@
       <p class="author">@ Bob Dylan</p>
     </div>
     <div class="description">
-      [toc]
-APP抓取 环境搭建 安装fiddler  设置switchypmega后，没有办法联网．不设置抓不到数据  genymotion的安装和填坑指南   下载死慢死慢　７ｋ左右
-  已经解决（突然就好了）．．．可能网络问题，等等就好，神经病一样的网络．
-  附件提供下载包
-  # 安装virtualbox sudo apt install virtualbox -y cd ~/Downloads/ chmod u&#43;x ./genymotion-3.0.2-linux_x64.bin sudo ./genymotion-3.0.2-linux_x64.bin -d ~/opt #起别名 #让命令别名永久生效： gedit ~/.bashrc 在~/bashrc文件中追加alias genymotion=&#34;~/opt/genymotion/genymotion” ,再source即可立即生效。 https://pan.baidu.com/s/1kUAftyR
-解决镜像下载慢的问题  genymotion默认的路径是~/.Genymobile, 这个文件夹下有个日志文件genymotion.log。或者全局搜索cd / &amp;&amp; sudo find ./ -name Genymobile，查看genymotion.log：vim - - genymotion.log, 然后找到类似Starting download of http://dl.genymotion.com/dists/5.0.0/ova/genymotion_vbox86p_5.0_170928_172212.ova （在最后几行），把这个地址copy出来去浏览器下载。 下载后将.ova文件cp到~/.Genymotion/Genymotion/ova/下，重新操作gui配置镜像，发现可以直接用了．  解决拖拽不能安装apk问题  下载附件genymotion-arm-translation_v1.1.zip 启动genymotion,在手机界面把这个zip文件拖到手机屏幕上,点确定安装,之后提示重启,重启之后，就不会有兼容性的问题了（安卓9.0版本不行，７．１之前的都可以，其他未作测试）   解决安装应用不兼容  下载附件Genymotion-ARM-Translation .
+      [toc] APP抓取 环境搭建 安装fiddler 设置switchypmega后，没有办法联网．不设置抓不到数据 genymotion的安装和填坑指南 下载
     </div>
   </div>
 
   <div class="extra content">
     <a>
       <i class="clock icon"></i>
-      3 分钟阅读
+      5 分钟阅读
     </a>
   </div>
 </article>
@@ -323,17 +318,14 @@ APP抓取 环境搭建 安装fiddler  设置switchypmega后，没有办法联网
       <p class="author">@ Bob Dylan</p>
     </div>
     <div class="description">
-      [toc]
-工作记录 jan 30 gantt dateFormat YYY-MM-DD-HH title 学习计划 section 1 craw: 2020-01-30-00, 6h section 2 django: 2020-01-30-18, 6h section 3 mongodb: 2020-01-31-00, 6h linux命令的复习 https://www.bilibili.com/video/av46253543?t=561&amp;p=27
-seafile的安装  安装好后，选择默认目录作为lib存放目录，不然没有反应  安装teamviewer 官网直接安装deb安装包
-sudo dpkg -i teamviewer* #出错或者无法启动 sudo apt install -f mongodb聚合命令、索引建立、数据库去重处理的学习 pymongo mongoengine的学习  jan 31 gantt title 当天计划 (fri jan 13) dateFormat HH:mm whole day(24h): done, 00:00,24:00 section 0 learn and work(14h): done,09:00,23:00 section 1 mongodb爬虫数据清洗去重: crit, mongo, 09:00,1h section 2 django框架简单了解: django,after mongo,1h section 3 app爬虫了解: crit,craw,after django,1h section 4 吃午饭:have_lunch,after craw,1h &lt;--!
+      [toc] 工作记录 jan 30 gantt dateFormat YYY-MM-DD-HH title 学习计划 section 1 craw: 2020-01-30-00, 6h section 2 django: 2020-01-30-18, 6h section 3 mongodb: 2020-01-31-00, 6h linux命令的复习 https://www.bilibili.com/video/av46253543?t=561&amp;p=27 seafile的安装 安装好后，选择默认目录作为lib存放目
     </div>
   </div>
 
   <div class="extra content">
     <a>
       <i class="clock icon"></i>
-      1 分钟阅读
+      2 分钟阅读
     </a>
   </div>
 </article>
@@ -388,25 +380,14 @@ sudo dpkg -i teamviewer* #出错或者无法启动 sudo apt install -f mongodb�
       <p class="author">@ Bob Dylan</p>
     </div>
     <div class="description">
-      第一章 基本类型和注意   number(int float bool )complex str tuple list set dict
-  type(2//2) int
-  type(2/2) float
-  数字交换
-  ‘’ ， “” ， ‘’‘ ’‘’， “”“ ”“”区别
-  bool(0),bool([]),bool({}),bool(&#39;&#39;) =flase
-  ‘let&#39;s go’ 转义字符
-   组的概念（序列）–str list tuple   表示组的方式有很多种
-  [1,2,3,4,5,6]–列表
-  嵌套列表（二维数组）
-  元组和列表的区别() [] *  序列共有的操作
-  切片 *  ord(‘d’) ascii码转换
+      第一章 基本类型和注意 number(int float bool )complex str tuple list set dict type(2//2) int type(2/2) float 数字交换 ‘’ ， “” ， ‘’‘ ’‘’， “”“ ”“”区别 bool(0),bool([]),bool({}),bool(&#39;&#39;) =flase ‘let&#39;s go’ 转义字符 组的概念（序列）&amp;ndash
     </div>
   </div>
 
   <div class="extra content">
     <a>
       <i class="clock icon"></i>
-      1 分钟阅读
+      2 分钟阅读
     </a>
   </div>
 </article>
@@ -430,14 +411,14 @@ sudo dpkg -i teamviewer* #出错或者无法启动 sudo apt install -f mongodb�
       <p class="author">@ Bob Dylan</p>
     </div>
     <div class="description">
-      &lt;div style=&#34;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-family:&amp;quot;PingFang SC&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimHei, Arial, SimSun;word-break:break-all;&#34;&gt;   &lt;div style=&#34;box-sizing:inherit;outline:0px;padding:0px;margin:0px;padding-bottom:16px;margin-top:36px;border-bottom:1px solid rgb(227, 227, 227);&#34;&gt; &lt;div style=&#34;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-size:12px;color:rgb(153, 153, 153);&#34;&gt; 版权声明：本文为博主原创文章，未经博主允许不得转载。	https://blog.csdn.net/qq_22703355/article/details/79268025	&lt;/div&gt; &lt;div style=&#34;box-sizing:inherit;outline:0px;padding:0px;margin:0px;margin-bottom:8px;font-size:12px;margin-top:18px;&#34;&gt; &lt;span style=&#34;box-sizing:inherit;outline:0px;color:rgb(77, 77, 77);&#34;&gt;文章标签：&lt;/span&gt; &lt;a href=&#34;http://so.csdn.net/so/search/s.do?q=python&amp;amp;t=blog&#34; target=&#34;_blank&#34; style=&#34;color:rgb(77, 77, 77);cursor:pointer;text-decoration:none;outline:0px;box-sizing:inherit;display:inline-block;word-break:break-all;border:1px solid rgb(204, 204, 204);border-radius:100px;padding:0px 8px;text-align:center;line-height:24px;min-width:24px;height:24px;margin-right:8px;&#34;&gt;python	&lt;/a&gt; &lt;/div&gt; &lt;div style=&#34;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-size:12px;margin-bottom:0px;&#34;&gt; &lt;span style=&#34;box-sizing:inherit;outline:0px;color:rgb(77, 77, 77);&#34;&gt;个人分类：&lt;/span&gt; &lt;a href=&#34;https://blog.csdn.net/qq_22703355/article/category/7387999&#34; target=&#34;_blank&#34; style=&#34;box-sizing:inherit;outline:0px;text-decoration:none;cursor:pointer;display:inline-block;margin-right:24px;color:rgb(200, 131, 38);word-break:break-all;&#34;&gt;python基础	&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div style=&#34;box-sizing:inherit;outline:0px;padding:0px;margin:0px;margin-top:8px;background:rgb(255, 255, 255);box-shadow:rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;&#34;&gt;&lt;div style=&#34;box-sizing:inherit;outline:0px;padding:0px;margin:0px;&#34;&gt;&lt;a href=&#34;https://blog.
+      × 首页 博客 学院 下载 GitChat TinyMind 论坛 问答 商城 写博客 发Chat 阿文的博客 学习也是旅程，记录下沿途的风景。希望郑州的IT发展的好点儿。 RSS订阅 原 pych
     </div>
   </div>
 
   <div class="extra content">
     <a>
       <i class="clock icon"></i>
-      10 分钟阅读
+      25 分钟阅读
     </a>
   </div>
 </article>
@@ -461,15 +442,14 @@ sudo dpkg -i teamviewer* #出错或者无法启动 sudo apt install -f mongodb�
       <p class="author">@ Bob Dylan</p>
     </div>
     <div class="description">
-      [toc]
-Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装 1.1 分区  查看系统BIOS模式 win&#43;R, 输入msinfo32, 得到系统信息,这里我的BIOS模式是传统模式（MBR），所以这里以MBR为例  下载ubuntu系统 链接： https://www.ubuntu.com/download/desktop 这里LTS表示长期维护版本，也就2年。下面那个是最新版，根据需求喜好随便下载一个，这里我以ubuntu18.04 LTS为例  分出空闲空间 快捷键“win&#43;X”-&gt;“磁盘管理”-&gt;“压缩卷”（Windows安装在固态硬盘则压缩固态硬盘，机械硬盘同理），压缩完之后会多出了一块“未分配空间”。我的固态是250G，我选择分108G（110592M）给Ubuntu，这里根据需要分就行，磁盘小分40g也够用。下图是我安装好双系统后被分出去的空间使用情况，刚分完108g是一块黑的   1.2 设置u盘启动  制作U盘启动盘 下载链接：https://rufus.ie/zh_CN.html 这里使用的是Rufus，选好下载的镜像，分区方案选择第一个（因为是装MBR的，UEFI就选第二个）其他默认就行  重启电脑 让自己的电脑从U盘启动，如果你的电脑是mbr格式，就不要以UEFI的格式进入，如果你的电脑是GPT格式，则必须以UEFI格式进入。我的是联想电脑，关机状态下，按开关键旁边的恢复按键即可进入BIOS菜单  1.3 安装ubuntu  install ubuntu 进入Boot menu选择界面，选择“Istall Ubuntu”，图形化的安装界面，软件暂时不要安装，继续，当出现要手动分盘符的时候，请选择“其它选项  分区 给108G空间进行分区操作，分配4个区间，分区时候选中空闲空间点下面加号 分区的时候如果碰到分区一块后无法再分，那是因为系统只能识别4块主分区，windows已经占了3个，可以先分其他区，再分主分区,一下是我的分区示例      目录 建议大小 格式 描述     / 50G ext4 根目录   swap 物理内存的两倍 swap 交换空间：交换分区相当于Windows中的“虚拟内存”，如果内存低的话（1-4G），物理内存的两倍，高点的话（8-16G）要么等于物理内存，要么物理内存&#43;2g左右，   /boot 200M ext4 空间起始位置 分区格式为ext4 /boot 建议：应该大于400MB或1GB Linux的内核及引导系统程序所需要的文件，比如 vmlinuz initrd.
+      [toc] Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装 1.1 分区 查看系统BIOS模式 win&#43;R, 输入msinfo32
     </div>
   </div>
 
   <div class="extra content">
     <a>
       <i class="clock icon"></i>
-      2 分钟阅读
+      7 分钟阅读
     </a>
   </div>
 </article>
@@ -524,7 +504,7 @@ Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装
       <p class="author">@ Bob Dylan</p>
     </div>
     <div class="description">
-      数据结构 数据库 
+      数据结构 数据库
     </div>
   </div>
 
@@ -555,14 +535,14 @@ Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装
       <p class="author">@ Bob Dylan</p>
     </div>
     <div class="description">
-      第一章 环境搭建 网络爬虫了解 快捷键 作用 第二章计算机网络协议基础  推荐书本 ==TCP/IP协议族 #F44336== ==计算机网络（第六版） #F44336==   ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接   不要急着找防火墙，redis，等乱七八糟的问题 出现错误百度说可能是redis-server没有开启，安装redis时发现防火墙没有开启，打开services.msc时发现所有安全相关的服务都无法开启，然后改注册表，更新系统，修复系统，360急救箱拯救系统，杀毒，试了一遍都没用。搞了两个小时啥用没有。睡觉时突然想到可能360管理的启动项关了，第二天起来搞了一下发现系统的安全服务都能用了,但是服务还是全部为灰色，不管了，能用就行。修好系统，装好redis，返回pycharm后，运行client确实没问题了，多疑的我把redis关了又试了一遍，发现还不报错。细看了一下，发现出错是因为要先运行server端。一切回到了最初。废了近四个小时，只因为一点粗心，留念谨记！先思考，在百度！   python基本语法  第四章 爬虫初体验 多线程和线程池操作 实现模拟登陆和验证码 爬虫和反爬虫 如何成为高级的爬虫工程师 
+      第一章 环境搭建 网络爬虫了解 快捷键 作用 第二章计算机网络协议基础 推荐书本 ==TCP/IP协议族 #F44336== ==计算机网络（第六版） #F44336==   ConnectionRefusedError: [WinError 10061] 由于目标计算机
     </div>
   </div>
 
   <div class="extra content">
     <a>
       <i class="clock icon"></i>
-      1 分钟阅读
+      3 分钟阅读
     </a>
   </div>
 </article>
@@ -678,7 +658,7 @@ Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', '...', 'auto');
+	ga('create', 'UA-98295641-1', 'auto');
 	
 	ga('send', 'pageview');
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans">
+<html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,9 +15,7 @@ Go语言深度学习笔记----慕课ccmouse
 
   
   <meta name="author" content="Bob Dylan" />
-  <meta name="description" content="[TOC]
-第一章 课程介绍和环境安装 第一节 课程介绍 第二节 环境安装  vscode golang环境配置 https://www.cnblogs.com/nickchou/p/9038114.html 其中lint和dlv插件安装会失败 lint需要将src/github.com/golang/lint复制到 src/golang.org/x/ dlv需要到http://github.com/derekparker/delve clone下来 git clone git@github.com:derekparker/delve.git到src/golang.org/x/中，然后再将delv文件夹复制到src/github.com/derekparker/下，然后执行 go install github.com/derekparker/delv/cmd/dlv  第二章 Go语法 第一节 变量 第二节 常量 第三节 循环语句 if语句 switch语句 for语句 第四节函数 第五节 指针 值交换 第六节 数组 第七节 切片 第八节 Map 第九节 字符串 ##第三章 面向对象
-第一节 结构体和方法 第二节 包 第三节 GOPATH环境变量 第四章 接口 第一节 duck typeing 第二节 接口的值类型 第三节接口的组合 " />
+  <meta name="description" content="[TOC] 第一章 课程介绍和环境安装 第一节 课程介绍 第二节 环境安装 vscode golang环境配置 https://www.cnblogs.com/nickchou/p/9038114.html 其中lint和dlv插件安装会失败 lint需要将src/git" />
 
 
 
@@ -27,9 +25,7 @@ Go语言深度学习笔记----慕课ccmouse
 
 
 <meta property="og:title" content="Go语言深度学习笔记----慕课ccmouse" />
-<meta property="og:description" content="[TOC]
-第一章 课程介绍和环境安装 第一节 课程介绍 第二节 环境安装  vscode golang环境配置 https://www.cnblogs.com/nickchou/p/9038114.html 其中lint和dlv插件安装会失败 lint需要将src/github.com/golang/lint复制到 src/golang.org/x/ dlv需要到http://github.com/derekparker/delve clone下来 git clone git@github.com:derekparker/delve.git到src/golang.org/x/中，然后再将delv文件夹复制到src/github.com/derekparker/下，然后执行 go install github.com/derekparker/delv/cmd/dlv  第二章 Go语法 第一节 变量 第二节 常量 第三节 循环语句 if语句 switch语句 for语句 第四节函数 第五节 指针 值交换 第六节 数组 第七节 切片 第八节 Map 第九节 字符串 ##第三章 面向对象
-第一节 结构体和方法 第二节 包 第三节 GOPATH环境变量 第四章 接口 第一节 duck typeing 第二节 接口的值类型 第三节接口的组合 " />
+<meta property="og:description" content="[TOC] 第一章 课程介绍和环境安装 第一节 课程介绍 第二节 环境安装 vscode golang环境配置 https://www.cnblogs.com/nickchou/p/9038114.html 其中lint和dlv插件安装会失败 lint需要将src/git" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://haidongsong.github.io/posts/go%E8%AF%AD%E8%A8%80%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E6%85%95%E8%AF%BEccmouse/" />
 <meta property="article:published_time" content="2017-12-15T00:00:00+00:00" />
@@ -39,9 +35,7 @@ Go语言深度学习笔记----慕课ccmouse
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Go语言深度学习笔记----慕课ccmouse"/>
-<meta name="twitter:description" content="[TOC]
-第一章 课程介绍和环境安装 第一节 课程介绍 第二节 环境安装  vscode golang环境配置 https://www.cnblogs.com/nickchou/p/9038114.html 其中lint和dlv插件安装会失败 lint需要将src/github.com/golang/lint复制到 src/golang.org/x/ dlv需要到http://github.com/derekparker/delve clone下来 git clone git@github.com:derekparker/delve.git到src/golang.org/x/中，然后再将delv文件夹复制到src/github.com/derekparker/下，然后执行 go install github.com/derekparker/delv/cmd/dlv  第二章 Go语法 第一节 变量 第二节 常量 第三节 循环语句 if语句 switch语句 for语句 第四节函数 第五节 指针 值交换 第六节 数组 第七节 切片 第八节 Map 第九节 字符串 ##第三章 面向对象
-第一节 结构体和方法 第二节 包 第三节 GOPATH环境变量 第四章 接口 第一节 duck typeing 第二节 接口的值类型 第三节接口的组合 "/>
+<meta name="twitter:description" content="[TOC] 第一章 课程介绍和环境安装 第一节 课程介绍 第二节 环境安装 vscode golang环境配置 https://www.cnblogs.com/nickchou/p/9038114.html 其中lint和dlv插件安装会失败 lint需要将src/git"/>
 
 
 <link rel="stylesheet" href="/css/github-markdown.css" />
@@ -495,7 +489,7 @@ go install github.com/derekparker/delv/cmd/dlv</li>
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', '...', 'auto');
+	ga('create', 'UA-98295641-1', 'auto');
 	
 	ga('send', 'pageview');
 }
