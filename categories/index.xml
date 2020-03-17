@@ -12,11 +12,20 @@
     
     
     <item>
-      <title>category1</title>
-      <link>https://haidongsong.github.io/categories/category1/</link>
+      <title>项目</title>
+      <link>https://haidongsong.github.io/categories/%E9%A1%B9%E7%9B%AE/</link>
       <pubDate>Mon, 16 Mar 2020 17:01:14 +0800</pubDate>
       
-      <guid>https://haidongsong.github.io/categories/category1/</guid>
+      <guid>https://haidongsong.github.io/categories/%E9%A1%B9%E7%9B%AE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试</title>
+      <link>https://haidongsong.github.io/categories/%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Mon, 16 Mar 2020 16:39:56 +0800</pubDate>
+      
+      <guid>https://haidongsong.github.io/categories/%E6%B5%8B%E8%AF%95/</guid>
       <description></description>
     </item>
     
