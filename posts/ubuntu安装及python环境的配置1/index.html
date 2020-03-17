@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+Ubuntu安装及Python环境的配置
+</title>
+
+    
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+
+  
+  <meta name="author" content="Bob Dylan" />
+  <meta name="description" content="[toc]
+Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装 1.1 分区  查看系统BIOS模式 win&#43;R, 输入msinfo32, 得到系统信息,这里我的BIOS模式是传统模式（MBR），所以这里以MBR为例  下载ubuntu系统 链接： https://www.ubuntu.com/download/desktop 这里LTS表示长期维护版本，也就2年。下面那个是最新版，根据需求喜好随便下载一个，这里我以ubuntu18.04 LTS为例  分出空闲空间 快捷键“win&#43;X”-&amp;gt;“磁盘管理”-&amp;gt;“压缩卷”（Windows安装在固态硬盘则压缩固态硬盘，机械硬盘同理），压缩完之后会多出了一块“未分配空间”。我的固态是250G，我选择分108G（110592M）给Ubuntu，这里根据需要分就行，磁盘小分40g也够用。下图是我安装好双系统后被分出去的空间使用情况，刚分完108g是一块黑的   1.2 设置u盘启动  制作U盘启动盘 下载链接：https://rufus.ie/zh_CN.html 这里使用的是Rufus，选好下载的镜像，分区方案选择第一个（因为是装MBR的，UEFI就选第二个）其他默认就行  重启电脑 让自己的电脑从U盘启动，如果你的电脑是mbr格式，就不要以UEFI的格式进入，如果你的电脑是GPT格式，则必须以UEFI格式进入。我的是联想电脑，关机状态下，按开关键旁边的恢复按键即可进入BIOS菜单  1.3 安装ubuntu  install ubuntu 进入Boot menu选择界面，选择“Istall Ubuntu”，图形化的安装界面，软件暂时不要安装，继续，当出现要手动分盘符的时候，请选择“其它选项  分区 给108G空间进行分区操作，分配4个区间，分区时候选中空闲空间点下面加号 分区的时候如果碰到分区一块后无法再分，那是因为系统只能识别4块主分区，windows已经占了3个，可以先分其他区，再分主分区,一下是我的分区示例      目录 建议大小 格式 描述     / 50G ext4 根目录   swap 物理内存的两倍 swap 交换空间：交换分区相当于Windows中的“虚拟内存”，如果内存低的话（1-4G），物理内存的两倍，高点的话（8-16G）要么等于物理内存，要么物理内存&#43;2g左右，   /boot 200M ext4 空间起始位置 分区格式为ext4 /boot 建议：应该大于400MB或1GB Linux的内核及引导系统程序所需要的文件，比如 vmlinuz initrd." />
+
+
+
+<meta name="generator" content="Hugo 0.67.1" />
+
+<link rel="canonical" href="https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/" />
+
+
+<meta property="og:title" content="Ubuntu安装及Python环境的配置" />
+<meta property="og:description" content="[toc]
+Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装 1.1 分区  查看系统BIOS模式 win&#43;R, 输入msinfo32, 得到系统信息,这里我的BIOS模式是传统模式（MBR），所以这里以MBR为例  下载ubuntu系统 链接： https://www.ubuntu.com/download/desktop 这里LTS表示长期维护版本，也就2年。下面那个是最新版，根据需求喜好随便下载一个，这里我以ubuntu18.04 LTS为例  分出空闲空间 快捷键“win&#43;X”-&gt;“磁盘管理”-&gt;“压缩卷”（Windows安装在固态硬盘则压缩固态硬盘，机械硬盘同理），压缩完之后会多出了一块“未分配空间”。我的固态是250G，我选择分108G（110592M）给Ubuntu，这里根据需要分就行，磁盘小分40g也够用。下图是我安装好双系统后被分出去的空间使用情况，刚分完108g是一块黑的   1.2 设置u盘启动  制作U盘启动盘 下载链接：https://rufus.ie/zh_CN.html 这里使用的是Rufus，选好下载的镜像，分区方案选择第一个（因为是装MBR的，UEFI就选第二个）其他默认就行  重启电脑 让自己的电脑从U盘启动，如果你的电脑是mbr格式，就不要以UEFI的格式进入，如果你的电脑是GPT格式，则必须以UEFI格式进入。我的是联想电脑，关机状态下，按开关键旁边的恢复按键即可进入BIOS菜单  1.3 安装ubuntu  install ubuntu 进入Boot menu选择界面，选择“Istall Ubuntu”，图形化的安装界面，软件暂时不要安装，继续，当出现要手动分盘符的时候，请选择“其它选项  分区 给108G空间进行分区操作，分配4个区间，分区时候选中空闲空间点下面加号 分区的时候如果碰到分区一块后无法再分，那是因为系统只能识别4块主分区，windows已经占了3个，可以先分其他区，再分主分区,一下是我的分区示例      目录 建议大小 格式 描述     / 50G ext4 根目录   swap 物理内存的两倍 swap 交换空间：交换分区相当于Windows中的“虚拟内存”，如果内存低的话（1-4G），物理内存的两倍，高点的话（8-16G）要么等于物理内存，要么物理内存&#43;2g左右，   /boot 200M ext4 空间起始位置 分区格式为ext4 /boot 建议：应该大于400MB或1GB Linux的内核及引导系统程序所需要的文件，比如 vmlinuz initrd." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ubuntu安装及Python环境的配置"/>
+<meta name="twitter:description" content="[toc]
+Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装 1.1 分区  查看系统BIOS模式 win&#43;R, 输入msinfo32, 得到系统信息,这里我的BIOS模式是传统模式（MBR），所以这里以MBR为例  下载ubuntu系统 链接： https://www.ubuntu.com/download/desktop 这里LTS表示长期维护版本，也就2年。下面那个是最新版，根据需求喜好随便下载一个，这里我以ubuntu18.04 LTS为例  分出空闲空间 快捷键“win&#43;X”-&gt;“磁盘管理”-&gt;“压缩卷”（Windows安装在固态硬盘则压缩固态硬盘，机械硬盘同理），压缩完之后会多出了一块“未分配空间”。我的固态是250G，我选择分108G（110592M）给Ubuntu，这里根据需要分就行，磁盘小分40g也够用。下图是我安装好双系统后被分出去的空间使用情况，刚分完108g是一块黑的   1.2 设置u盘启动  制作U盘启动盘 下载链接：https://rufus.ie/zh_CN.html 这里使用的是Rufus，选好下载的镜像，分区方案选择第一个（因为是装MBR的，UEFI就选第二个）其他默认就行  重启电脑 让自己的电脑从U盘启动，如果你的电脑是mbr格式，就不要以UEFI的格式进入，如果你的电脑是GPT格式，则必须以UEFI格式进入。我的是联想电脑，关机状态下，按开关键旁边的恢复按键即可进入BIOS菜单  1.3 安装ubuntu  install ubuntu 进入Boot menu选择界面，选择“Istall Ubuntu”，图形化的安装界面，软件暂时不要安装，继续，当出现要手动分盘符的时候，请选择“其它选项  分区 给108G空间进行分区操作，分配4个区间，分区时候选中空闲空间点下面加号 分区的时候如果碰到分区一块后无法再分，那是因为系统只能识别4块主分区，windows已经占了3个，可以先分其他区，再分主分区,一下是我的分区示例      目录 建议大小 格式 描述     / 50G ext4 根目录   swap 物理内存的两倍 swap 交换空间：交换分区相当于Windows中的“虚拟内存”，如果内存低的话（1-4G），物理内存的两倍，高点的话（8-16G）要么等于物理内存，要么物理内存&#43;2g左右，   /boot 200M ext4 空间起始位置 分区格式为ext4 /boot 建议：应该大于400MB或1GB Linux的内核及引导系统程序所需要的文件，比如 vmlinuz initrd."/>
+
+
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/site.css" />
+
+
+<style>
+  a {
+    color: seagreen !important;
+  }
+</style>
+
+
+
+<style>
+  .inverted a {
+     color: darkseagreen !important;
+  }
+</style>
+
+
+  </head>
+
+  
+  <body style="background: black;">
+  
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          
+<nav class="ui secondary inverted menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="翻转！"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="首页" onclick="window.location.href = 'https:\/\/haidongsong.github.io\/'"></i>
+  </div>
+  <div class="item">
+    <i id="theme-switch" class="large link icon" onclick="themeSwitch()"></i>
+  </div>
+</nav>
+
+          
+<div class="ui centered relaxed grid dream-grid">
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single">
+
+    <section class="ui top attached segment" id="dream-save-post-as-img">
+      <header style="margin-top: 0 !important;">
+        <h2 class="ui header">
+          Ubuntu安装及Python环境的配置
+          <div class="sub header">@ Bob Dylan · Monday, Jan 1, 0001 · 2 分钟阅读 · 更新于 Jan 1, 0001</div>
+        </h2>
+      </header>
+      <article style="margin-top: 2rem;"><p>[toc]</p>
+<h1 id="ubuntu安装及python环境的配置">Ubuntu安装及Python环境的配置</h1>
+<h2 id="1-ubuntu1804基于win10双系统的安装">1. ubuntu18.04基于win10双系统的安装</h2>
+<h3 id="11-分区">1.1 分区</h3>
+<ol>
+<li>查看系统BIOS模式
+win+R, 输入msinfo32, 得到系统信息,这里我的BIOS模式是传统模式（MBR），所以这里以MBR为例
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579588104632.png" alt="enter description here"></li>
+<li>下载ubuntu系统
+链接： <a href="https://www.ubuntu.com/download/desktop">https://www.ubuntu.com/download/desktop</a>
+这里LTS表示长期维护版本，也就2年。下面那个是最新版，根据需求喜好随便下载一个，这里我以ubuntu18.04 LTS为例
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579588104610.png" alt="enter description here"></li>
+<li>分出空闲空间
+快捷键“win+X”-&gt;“磁盘管理”-&gt;“压缩卷”（Windows安装在固态硬盘则压缩固态硬盘，机械硬盘同理），压缩完之后会多出了一块“未分配空间”。我的固态是250G，我选择分108G（110592M）给Ubuntu，这里根据需要分就行，磁盘小分40g也够用。下图是我安装好双系统后被分出去的空间使用情况，刚分完108g是一块黑的
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579588104458.png" alt="enter description here"></li>
+</ol>
+<h3 id="12-设置u盘启动">1.2 设置u盘启动</h3>
+<ol>
+<li>制作U盘启动盘
+下载链接：https://rufus.ie/zh_CN.html
+这里使用的是Rufus，选好下载的镜像，分区方案选择第一个（因为是装MBR的，UEFI就选第二个）其他默认就行
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579588104454.png" alt="enter description here"></li>
+<li>重启电脑
+让自己的电脑从U盘启动，如果你的电脑是mbr格式，就不要以UEFI的格式进入，如果你的电脑是GPT格式，则必须以UEFI格式进入。我的是联想电脑，关机状态下，按开关键旁边的恢复按键即可进入BIOS菜单</li>
+</ol>
+<h3 id="13-安装ubuntu">1.3 安装ubuntu</h3>
+<ol>
+<li>install ubuntu
+进入Boot menu选择界面，选择“Istall Ubuntu”，图形化的安装界面，软件暂时不要安装，继续，当出现要手动分盘符的时候，请选择“其它选项
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579588104577.png" alt="enter description here"></li>
+<li>分区
+给108G空间进行分区操作，分配4个区间，分区时候选中空闲空间点下面加号
+<!-- raw HTML omitted -->分区的时候如果碰到分区一块后无法再分，那是因为系统只能识别4块主分区，windows已经占了3个，可以先分其他区，再分主分区,一下是我的分区示例 <!-- raw HTML omitted --></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>目录</th>
+<th>建议大小</th>
+<th>格式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/</td>
+<td>50G</td>
+<td>ext4</td>
+<td>根目录</td>
+</tr>
+<tr>
+<td>swap</td>
+<td>物理内存的两倍</td>
+<td>swap</td>
+<td>交换空间：交换分区相当于Windows中的“虚拟内存”，如果内存低的话（1-4G），物理内存的两倍，高点的话（8-16G）要么等于物理内存，要么物理内存+2g左右，</td>
+</tr>
+<tr>
+<td>/boot</td>
+<td>200M</td>
+<td>ext4</td>
+<td>空间起始位置 分区格式为ext4 /boot 建议：应该大于400MB或1GB Linux的内核及引导系统程序所需要的文件，比如 vmlinuz initrd.img文件都位于这个目录中。在一般情况下，GRUB或LILO系统引导管理器也位于这个目录；启动撞在文件存放位置，如kernels，initrd，grub。</td>
+</tr>
+<tr>
+<td>/home</td>
+<td>50G</td>
+<td>ext4</td>
+<td>用户工作目录；个人配置文件，如个人环境变量等；所有账号分配一个工作目录。</td>
+</tr>
+<tr>
+<td><!-- raw HTML omitted -->第四次分区后请不要急着点“安装” 分区设置完毕后，下方还有一项“安装启动引导器的设备”选择/boot所在的盘符。接着安装，自动重新启动Win10。 <!-- raw HTML omitted --></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>如果重启失败，强行按电源键重启进入windows系统</li>
+</ul>
+<h3 id="14-设置开机引导">1.4 设置开机引导</h3>
+<ol>
+<li>下载easyBCD
+链接：https://pc.qq.com/detail/11/detail_161271.html
+打开软件，设置开机引导，添加条目，如果您是传统BIOS和MBR格式参照下图
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579588104455.png" alt="enter description here">
+这里可以选择默认开机系统
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579588104457.png" alt="enter description here"></li>
+<li>重启，完成</li>
+</ol>
+<p>本节参考文档：https://blog.csdn.net/shaoyezuizuishaui/article/details/90647385
+<a href="https://www.cnblogs.com/masbay/p/11627727.html">https://www.cnblogs.com/masbay/p/11627727.html</a></p>
+<hr>
+<h2 id="2-ubuntu安装后的配置">2. ubuntu安装后的配置</h2>
+<h3 id="21-设置阿里云的源">2.1 设置阿里云的源</h3>
+<p>按super+a，搜索softeware &amp; update点开设置成下图所示即可
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579591343290.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579591125848.png" alt="enter description here"></p>
+<h3 id="22-安装谷歌拼音输入法">2.2 安装谷歌拼音输入法</h3>
+<p>我之前安装了搜狗拼音，一直出现乱码情况，找了很多办法也没有解决，干脆撞了个谷歌拼音（如果有小伙伴也有这样的问题，可以给我留言，我们一起讨论，或者有大佬解决了这个问题可以告诉小弟）</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt install fcitx-googlepinyin
+</code></pre></div><ol>
+<li>去Ubuntu系统设置-&gt;区域和语言-&gt;管理已安装的语言,进去和可能提示你安装一些东西，点安装就行了，安装完成后出现语言支持框，选择汉语　然后点应用到整个系统，在键盘输入法系统选择fcitx，没有的话去应用商店搜索安装下，一般都预装了的选择后，重启系统
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579591711467.png" alt="enter description here">
+-2. 重启成功后，右上角状态栏有个输入法标识，点击，出现配置，然后选择谷歌拼音输入法就成
+或者输入下列命令</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">fcitx-config-gtk3
+</code></pre></div><ul>
+<li>如果输入法候选栏透明，去第三步的窗口，选择附加组建-&gt;高级-&gt;去掉经典皮肤勾选**</li>
+</ul>
+<h3 id="23-安装ssr">2.3 安装ssr</h3>
+<p><a href="https://github.com/qingshuisiyuan/electron-ssr-backup/releases">https://github.com/qingshuisiyuan/electron-ssr-backup/releases</a>
+下载后直接鼠标双击即可安装
+或者执行</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dpkg -i electron-ssr
+</code></pre></div><h4 id="231-设置开机自启动">2.3.1 设置开机自启动</h4>
+<ol>
+<li>查看软件安装路径</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">
+whereis electron-ssr  <span style="color:#75715e"># 查看软件安装路径</span>
+
+ls -al /usr/local/bin/electron-ssr  <span style="color:#75715e">#查看软链接指向哪里</span>
+
+</code></pre></div><p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579607340100.png" alt="enter description here"></p>
+<ol start="2">
+<li>super+a搜索startup  appllications preferences添加可执行程序，如图
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579607642083.png" alt="enter description here"></li>
+</ol>
+<h3 id="24-typora或者小书匠的安装">2.4 typora或者小书匠的安装</h3>
+<h4 id="241-typora的安装">2.4.1 typora的安装</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">
+sudo apt-get update
+
+sudo apt-get install indicator-sysmonitor
+
+indicator-sysmonitor &amp;
+</code></pre></div><p><a href="https://support.typora.io/Typora-on-Linux/">官方教程</a></p>
+<h4 id="242-小书匠的安装">2.4.2 小书匠的安装</h4>
+<p><a href="https://github.com/suziwen/markdownxiaoshujiang/releases/tag/v7.9.0">https://github.com/suziwen/markdownxiaoshujiang/releases/tag/v7.9.0</a>
+下载zip格式的即可，解压</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">unzip Story-writer
+</code></pre></div><h5 id="2421-创建桌面图标">2.4.2.1 创建桌面图标</h5>
+<ol>
+<li>创建桌面图标文件
+在/usr/share/applications 目录下，新建story-writer.desktop,打开这个文件</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">vim /usr/share/applications/eclipse.desktop
+</code></pre></div><ol start="2">
+<li>编辑为：</li>
+</ol>
+<pre><code class="language-shell?linenums" data-lang="shell?linenums">Comment=IDEA
+Exec=/usr/local/Story-writer/Story-writer #根据软件的具体执行路径修改
+Terminal=false   #软件打开时是否启动终端
+Type=Application
+Icon=/usr/local/Story-writer/Story-writer.png #根据软件的具体执行路径修改
+Categories=Development;
+
+</code></pre><ol start="3">
+<li>进入/usr/share/applications 将相应图标右键复制到桌面即可</li>
+</ol>
+<hr>
+<p>推荐：小书匠（这里是给喜欢写博客的朋友推荐的）
+理由：可以方便的实现图片转链接，我配置了gitee图床，笔记可以同步到印象笔记
+之前我安装picgo，无法运行，不知道你们有没有这个问题，所以我就放弃了typora+picgo
+如果有更好的方法，欢迎大家和我交流</p>
+<hr>
+<h3 id="23-gitee图床的搭建小书匠绑定图床">2.3 gitee图床的搭建、小书匠绑定图床</h3>
+<ol>
+<li>创建仓库，网上教程很多，这里不再赘述。<a href="%5Dhttps://gitee.com/">直通车</a></li>
+<li>生成私人令牌：https://gitee.com/profile/personal_access_tokens/new</li>
+<li>绑定小书匠
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579594755864.png" alt="enter description here"></li>
+<li>绑定成功或有提示，成功后，系统剪贴板的图片会自动生成网络图片，直接粘贴即可用，这样如果要发布博客，直接复制md文档内容过去就可以，不用考虑图片丢失的问题。</li>
+</ol>
+<h3 id="24-安装谷歌浏览器">2.4 安装谷歌浏览器</h3>
+<p><a href="https://www.google.cn/intl/zh-CN/chrome/">https://www.google.cn/intl/zh-CN/chrome/</a>
+参考安装ssr</p>
+<h3 id="25-配置截图工具">2.5 配置截图工具</h3>
+<p>打开系统设置找到devices将系统自带的截图工具设置自己常用的快捷键就行
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579595317107.png" alt="enter description here"></p>
+<h3 id="26-安装美化工具">2.6 安装美化工具</h3>
+<p>tweak和dash安装，参考后盾人文档即可</p>
+<p>本节参考文档：
+<a href="https://blog.csdn.net/linfeng886/article/details/83958806">https://blog.csdn.net/linfeng886/article/details/83958806</a>
+后盾人：http://houdunren.gitee.io/note/linux/10%20ubuntu.html#%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F</p>
+<hr>
+<h2 id="3-python环境的搭建">3. python环境的搭建</h2>
+<h3 id="31-安装python37和pip3">3.1 安装python3.7和pip3</h3>
+<ol>
+<li>安装依赖</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt-get install build-essential checkinstall
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+
+<span style="color:#75715e"># #</span>
+sudo apt-get install zlib1g-dev libbz2-dev libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev tk-dev libgdbm-dev libdb-dev libpcap-dev xz-utils libexpat1-dev liblzma-dev libffi-dev libc6-dev
+</code></pre></div><ol start="2">
+<li>设置安装路径
+我一般安装在/usr/local/下面</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo mkdir -p /usr/local/python3
+</code></pre></div><ol start="3">
+<li>下载python</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 下载到指定位置</span>
+cd /home/download
+sudo wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tgz
+
+sudo tar xzf Python-3.7.0.tgz
+</code></pre></div><ol start="4">
+<li>编译并安装（make的时候时间要久一点）
+执行这步是后面最好加上 &ndash;enable-optimizations 会自动安装pip3及优化配置</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd Python-3.7.0
+sudo ./configure --prefix<span style="color:#f92672">=</span>/usr/local/python3 --enable-optimizations
+sudo make
+sudo make install
+</code></pre></div><p>5.配置软链接
+我的系统是默认安装了python3.6，我想要安装3.7版本
+千万不要随便卸载原来的python版本，不管是2.6还是3.6。不信邪的可以试试
+不要随便改原来的链接 ，很多软件（比如terminal的快捷方式依赖python命令，没有的话无法用。ssr依赖python3.6,直接改它的软链接，会导致ssr失效）</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">python3 -V
+pip3 -V
+
+<span style="color:#75715e">#添加python3的软链接</span>
+ln -s /usr/local/python3/bin/python3.7 /usr/bin/python3.7
+<span style="color:#75715e">#添加 pip3 的软链接</span>
+ln -s /usr/local/python3/bin/pip3.7 /usr/bin/pip3.7
+
+<span style="color:#75715e"># 查看一下是否成功</span>
+python3.7 -V
+pip3.7 -V
+</code></pre></div><p>参考文档：https://juejin.im/post/5d5e3891f265da03bf0f48cc
+注意：如果</p>
+<h3 id="32-安装pipenv">3.2 安装pipenv</h3>
+<ol>
+<li>安装pipenv
+pip install &ndash;user pipenv
+这安装在了用户的$HOME/.local/bin目录下，需要自行将该目录添加到PATH中，打开.bashrc，添加</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">export PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;家目录/.local/bin:</span>$PATH<span style="color:#e6db74">&#34;</span>
+</code></pre></div><p>pipenv的更新</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pip install --user --upgrade pipenv
+</code></pre></div><ol start="2">
+<li>使用pipenv
+初始化虚拟环境blo</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pipenv --three <span style="color:#75715e"># python3</span>
+pipenv --two <span style="color:#75715e"># python2</span>
+</code></pre></div><p>这会在当前目录下创建一个Pipfile文件，自动记录所有安装的和卸载的模块</p>
+<ol start="3">
+<li>进入虚拟环境，</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pipenv shell
+</code></pre></div><p>注意，直接使用这个命令可以自动初始化虚拟环境</p>
+<ol start="4">
+<li>退出虚拟环境</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">exit
+</code></pre></div><p>本节参考文档：https://zhuanlan.zhihu.com/p/51444311</p>
+<h3 id="33-安装pycharm">3.3 安装pycharm</h3>
+<p>打开系统的软件哭直接搜索pycharm安装即可
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1579597700621.png" alt="enter description here"></p>
+<p>😄😄😄😄</p>
+<p>2020年01月21日 17时09分56秒</p>
+</article>
+    </section>
+
+    <footer class="ui attached segment dream-tags">
+      
+        
+          <a class="ui label" href="/tags/ubuntu" title="ubuntu">ubuntu</a>
+        
+          <a class="ui label" href="/tags/python" title="python">python</a>
+        
+      
+      <div
+        class="ui label"
+        style="float: right; background: #1b1c1d !important; cursor: pointer;"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i> Save as image
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+  <div class="sixteen wide mobile sixteen wide tablet four wide computer column">
+    <article class="dream-header">
+  <section class="ui top attached center aligned segment">
+    <div class="ui small circular image">
+      
+        <img src="/img/avatar.jpg">
+      
+    </div>
+
+    <h3 class="ui header">Bob Dylan的博客<div class="sub header" style="margin-top: 0.5rem;">与其感慨路难行，不如马上出发</div>
+    </h3>
+
+    <div class="ui horizontal list">
+      
+      <a class="item" href="/posts">
+        <i class="archive icon" title="归档"></i>
+      </a>
+      
+      <a class="item" href="/tags">
+        <i class="tags icon" title="所有标签"></i>
+      </a>
+      <a class="item" href="/categories">
+        <i class="th list icon" title="所有分类"></i>
+      </a>
+    </div>
+  </section>
+
+  
+  <section class="ui attached center aligned segment dream-tags">
+    
+      <a class="ui label" href="/tags/go" title="go">go</a>
+    
+      <a class="ui label" href="/tags/mongo" title="mongo">mongo</a>
+    
+      <a class="ui label" href="/tags/python" title="python">python</a>
+    
+      <a class="ui label" href="/tags/ubuntu" title="ubuntu">ubuntu</a>
+    
+      <a class="ui label" href="/tags/vue" title="vue">vue</a>
+    
+      <a class="ui label" href="/tags/%E5%B0%8F%E4%B9%A6%E5%8C%A0" title="小书匠">小书匠</a>
+    
+      <a class="ui label" href="/tags/%E6%8A%95%E8%B5%84" title="投资">投资</a>
+    
+      <a class="ui label" href="/tags/%E7%88%AC%E8%99%AB" title="爬虫">爬虫</a>
+    
+      <a class="ui label" href="/tags/%E9%9D%A2%E8%AF%95" title="面试">面试</a>
+    
+  </section>
+  
+
+  
+  <section class="ui attached segment dream-categories">
+    <div class="ui accordion">
+      
+        <div class="title">
+          <i class="dropdown icon"></i>
+          <a href="/categories/go" class="item">go</a>
+        </div>
+        <div class="content">
+          <div class="ui list">
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/go%E8%AF%AD%E8%A8%80%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E6%85%95%E8%AF%BEccmouse/" class="item">Go语言深度学习笔记----慕课ccmouse</a>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      
+        <div class="title">
+          <i class="dropdown icon"></i>
+          <a href="/categories/python" class="item">python</a>
+        </div>
+        <div class="content">
+          <div class="ui list">
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/app%E7%88%AC%E8%99%AB/" class="item">app爬虫</a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/" class="item">工作记录</a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/%E5%85%A8%E9%9D%A2%E7%B3%BB%E7%BB%9F-python3%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/" class="item">全面系统 Python3入门与进阶</a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/%E6%93%8D%E4%BD%9C%E4%B8%89%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%BA%93/" class="item">操作三大数据库</a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/python%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B0%B1%E4%B8%9A%E9%9D%A2%E8%AF%95%E6%8C%87%E5%AF%BC/" class="item">Python服务端工程师就业面试指导</a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/%E4%BB%8E%E9%9B%B6%E8%B5%B7%E6%AD%A5-%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88/" class="item">从零起步 系统入门Python爬虫工程师</a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/mongodb/" class="item">Mongodb</a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/pycharm2018%E6%BF%80%E6%B4%BB%E7%BB%88%E6%9E%81%E5%8A%9E%E6%B3%95/" class="item">pycharm2018激活终极办法</a>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/" class="item">Ubuntu安装及Python环境的配置</a>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      
+        <div class="title">
+          <i class="dropdown icon"></i>
+          <a href="/categories/%E5%89%8D%E7%AB%AF" class="item">前端</a>
+        </div>
+        <div class="content">
+          <div class="ui list">
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/vue2.5%E5%8E%BB%E5%93%AA%E5%84%BF%E7%BD%91app%E5%BC%80%E5%8F%91/" class="item">Vue2.5去哪儿网app开发</a>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      
+        <div class="title">
+          <i class="dropdown icon"></i>
+          <a href="/categories/%E6%8A%95%E8%B5%84" class="item">投资</a>
+        </div>
+        <div class="content">
+          <div class="ui list">
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/%E6%8A%95%E8%B5%84/" class="item">投资</a>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      
+    </div>
+  </section>
+  
+
+  <section class="ui bottom attached center aligned segment">
+      
+      <p>© 2020 Hugo Theme Dream</p>
+      
+      <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+  </section>
+</article>
+
+  </div>
+</div>
+
+        </section>
+        <section class="back">
+          
+<nav class="ui secondary inverted menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="翻转！"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="首页" onclick="window.location.href = 'https:\/\/haidongsong.github.io\/'"></i>
+  </div>
+  <div class="item">
+    <i id="theme-switch" class="large link icon" onclick="themeSwitch()"></i>
+  </div>
+</nav>
+
+          <div class="ui centered relaxed grid dream-grid dream-back">
+  
+    <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+      <article>
+        <div class="ui top attached segment">
+          <h3 class="ui header">Desc</h3>
+        </div>
+        <div class="ui attached segment markdown-body">
+          <p>Hi, my name is Bob Dylan.</p>
+<p>This is my blog</p>
+
+        </div>
+      </article>
+    </section>
+  
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article>
+      <div class="ui top attached segment">
+        <h3 class="ui header">社交链接</h3>
+      </div>
+      <div class="ui attached segment">
+        <nav class="ui secondary menu dream-menu">
+          
+            <div class="item">
+              <a href="mailto:shdqrn1314@gmail.com">
+                <i class="large mail icon" title="email"></i>
+              </a>
+            </div>
+          
+
+          
+            <div class="item">
+              <a href="https://github.com/haidongsong" target="_blank">
+                <i class="large github icon" title="github"></i>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+          
+            <div class="item">
+              <a href="https://codepen.io/1784689393@qq.com" target="_blank">
+                <i class="large codepen icon" title="codepen"></i>
+              </a>
+            </div>
+          
+        </nav>
+      </div>
+    </article>
+  </section>
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+  </section>
+
+  
+  
+</div>
+
+        </section>
+      </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', '...', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  </body>
+</html>

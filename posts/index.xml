@@ -6,76 +6,15 @@
     <description>Recent content in 归档 on Hugo Theme Dream</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
-    <lastBuildDate>Mon, 16 Mar 2020 17:01:14 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://haidongsong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Test Img</title>
-      <link>https://haidongsong.github.io/posts/test-img/</link>
-      <pubDate>Mon, 16 Mar 2020 17:01:14 +0800</pubDate>
-      
-      <guid>https://haidongsong.github.io/posts/test-img/</guid>
-      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>更新内容</title>
-      <link>https://haidongsong.github.io/posts/%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9-%E5%89%AF%E6%9C%AC/</link>
-      <pubDate>Mon, 16 Mar 2020 17:01:14 +0800</pubDate>
-      
-      <guid>https://haidongsong.github.io/posts/%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9-%E5%89%AF%E6%9C%AC/</guid>
-      <description>[toc!?direction=lr]
-小书匠收费 收费与不收费的区别 收费 收费项目  pdf 定制化导出(pdf封面，水印，加密等) 支持在线更新，优先使用新功能 配置数据同步 自定义数据中心  </description>
-    </item>
-    
-    <item>
-      <title>更新内容</title>
-      <link>https://haidongsong.github.io/posts/%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</link>
-      <pubDate>Mon, 16 Mar 2020 17:01:14 +0800</pubDate>
-      
-      <guid>https://haidongsong.github.io/posts/%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</guid>
-      <description>[toc!?direction=lr]
-小书匠收费 收费与不收费的区别 收费 收费项目  pdf 定制化导出(pdf封面，水印，加密等) 支持在线更新，优先使用新功能 配置数据同步 自定义数据中心  </description>
-    </item>
-    
-    <item>
-      <title>Ppx</title>
-      <link>https://haidongsong.github.io/posts/ppx/</link>
-      <pubDate>Mon, 16 Mar 2020 16:39:56 +0800</pubDate>
-      
-      <guid>https://haidongsong.github.io/posts/ppx/</guid>
-      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://haidongsong.github.io/posts/test/</link>
-      <pubDate>Mon, 16 Mar 2020 16:34:41 +0800</pubDate>
-      
-      <guid>https://haidongsong.github.io/posts/test/</guid>
-      <description>[toc]
-APP抓取 环境搭建 安装fiddler  设置switchypmega后，没有办法联网．不设置抓不到数据  genymotion的安装和填坑指南   下载死慢死慢　７ｋ左右
-  已经解决（突然就好了）．．．可能网络问题，等等就好，神经病一样的网络．
-  附件提供下载包
-  # 安装virtualbox sudo apt install virtualbox -y cd ~/Downloads/ chmod u+x ./genymotion-3.0.2-linux_x64.bin sudo ./genymotion-3.0.2-linux_x64.bin -d ~/opt #起别名 #让命令别名永久生效： gedit ~/.bashrc 在~/bashrc文件中追加alias genymotion=&amp;quot;~/opt/genymotion/genymotion&amp;rdquo; ,再source即可立即生效。 https://pan.baidu.com/s/1kUAftyR
-解决镜像下载慢的问题  genymotion默认的路径是~/.Genymobile, 这个文件夹下有个日志文件genymotion.log。或者全局搜索cd / &amp;amp;&amp;amp; sudo find ./ -name Genymobile，查看genymotion.log：vim - - genymotion.log, 然后找到类似Starting download of http://dl.genymotion.com/dists/5.0.0/ova/genymotion_vbox86p_5.0_170928_172212.ova （在最后几行），把这个地址copy出来去浏览器下载。 下载后将.ova文件cp到~/.Genymotion/Genymotion/ova/下，重新操作gui配置镜像，发现可以直接用了．  解决拖拽不能安装apk问题  下载附件genymotion-arm-translation_v1.1.zip 启动genymotion,在手机界面把这个zip文件拖到手机屏幕上,点确定安装,之后提示重启,重启之后，就不会有兼容性的问题了（安卓9.0版本不行，７．１之前的都可以，其他未作测试）   解决安装应用不兼容  下载附件Genymotion-ARM-Translation .</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://haidongsong.github.io/posts/my-first-post/</link>
-      <pubDate>Mon, 16 Mar 2020 15:39:08 +0800</pubDate>
-      
-      <guid>https://haidongsong.github.io/posts/my-first-post/</guid>
-      <description>去你吗的 </description>
-    </item>
-    
-    <item>
       <title>app爬虫</title>
       <link>https://haidongsong.github.io/posts/app%E7%88%AC%E8%99%AB/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://haidongsong.github.io/posts/app%E7%88%AC%E8%99%AB/</guid>
       <description>[toc]
@@ -87,21 +26,119 @@ APP抓取 环境搭建 安装fiddler  设置switchypmega后，没有办法联网
     </item>
     
     <item>
-      <title>fuck you</title>
-      <link>https://haidongsong.github.io/posts/nimabi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>工作记录</title>
+      <link>https://haidongsong.github.io/posts/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://haidongsong.github.io/posts/nimabi/</guid>
-      <description>欢迎使用小书匠编辑器 nihao</description>
+      <guid>https://haidongsong.github.io/posts/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/</guid>
+      <description>[toc]
+工作记录 jan 30 gantt dateFormat YYY-MM-DD-HH title 学习计划 section 1 craw: 2020-01-30-00, 6h section 2 django: 2020-01-30-18, 6h section 3 mongodb: 2020-01-31-00, 6h linux命令的复习 https://www.bilibili.com/video/av46253543?t=561&amp;amp;p=27
+seafile的安装  安装好后，选择默认目录作为lib存放目录，不然没有反应  安装teamviewer 官网直接安装deb安装包
+sudo dpkg -i teamviewer* #出错或者无法启动 sudo apt install -f mongodb聚合命令、索引建立、数据库去重处理的学习 pymongo mongoengine的学习  jan 31 gantt title 当天计划 (fri jan 13) dateFormat HH:mm whole day(24h): done, 00:00,24:00 section 0 learn and work(14h): done,09:00,23:00 section 1 mongodb爬虫数据清洗去重: crit, mongo, 09:00,1h section 2 django框架简单了解: django,after mongo,1h section 3 app爬虫了解: crit,craw,after django,1h section 4 吃午饭:have_lunch,after craw,1h &amp;lt;--!</description>
     </item>
     
     <item>
-      <title>readme</title>
+      <title>全面系统 Python3入门与进阶</title>
+      <link>https://haidongsong.github.io/posts/%E5%85%A8%E9%9D%A2%E7%B3%BB%E7%BB%9F-python3%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/</link>
+      <pubDate>Thu, 17 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/%E5%85%A8%E9%9D%A2%E7%B3%BB%E7%BB%9F-python3%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/</guid>
+      <description>第一章 基本类型和注意   number(int float bool )complex str tuple list set dict
+  type(2//2) int
+  type(2/2) float
+  数字交换
+  ‘’ ， “” ， ‘’‘ ’‘’， “”“ ”“”区别
+  bool(0),bool([]),bool({}),bool(&#39;&#39;) =flase
+  &amp;lsquo;let&#39;s go&amp;rsquo; 转义字符
+   组的概念（序列）&amp;ndash;str list tuple   表示组的方式有很多种
+  [1,2,3,4,5,6]&amp;ndash;列表
+  嵌套列表（二维数组）
+  元组和列表的区别() [] *  序列共有的操作
+  切片 *  ord(&amp;lsquo;d&amp;rsquo;) ascii码转换</description>
+    </item>
+    
+    <item>
+      <title>操作三大数据库</title>
+      <link>https://haidongsong.github.io/posts/%E6%93%8D%E4%BD%9C%E4%B8%89%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/%E6%93%8D%E4%BD%9C%E4%B8%89%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <description>test</description>
+    </item>
+    
+    <item>
+      <title>Python服务端工程师就业面试指导</title>
+      <link>https://haidongsong.github.io/posts/python%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B0%B1%E4%B8%9A%E9%9D%A2%E8%AF%95%E6%8C%87%E5%AF%BC/</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/python%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B0%B1%E4%B8%9A%E9%9D%A2%E8%AF%95%E6%8C%87%E5%AF%BC/</guid>
+      <description>数据结构 数据库 </description>
+    </item>
+    
+    <item>
+      <title>从零起步 系统入门Python爬虫工程师</title>
+      <link>https://haidongsong.github.io/posts/%E4%BB%8E%E9%9B%B6%E8%B5%B7%E6%AD%A5-%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88/</link>
+      <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/%E4%BB%8E%E9%9B%B6%E8%B5%B7%E6%AD%A5-%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88/</guid>
+      <description>第一章 环境搭建 网络爬虫了解 快捷键 作用 第二章计算机网络协议基础  推荐书本 ==TCP/IP协议族 #F44336== ==计算机网络（第六版） #F44336==   ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接   不要急着找防火墙，redis，等乱七八糟的问题 出现错误百度说可能是redis-server没有开启，安装redis时发现防火墙没有开启，打开services.msc时发现所有安全相关的服务都无法开启，然后改注册表，更新系统，修复系统，360急救箱拯救系统，杀毒，试了一遍都没用。搞了两个小时啥用没有。睡觉时突然想到可能360管理的启动项关了，第二天起来搞了一下发现系统的安全服务都能用了,但是服务还是全部为灰色，不管了，能用就行。修好系统，装好redis，返回pycharm后，运行client确实没问题了，多疑的我把redis关了又试了一遍，发现还不报错。细看了一下，发现出错是因为要先运行server端。一切回到了最初。废了近四个小时，只因为一点粗心，留念谨记！先思考，在百度！   python基本语法  第四章 爬虫初体验 多线程和线程池操作 实现模拟登陆和验证码 爬虫和反爬虫 如何成为高级的爬虫工程师 </description>
+    </item>
+    
+    <item>
+      <title>Vue2.5去哪儿网app开发</title>
+      <link>https://haidongsong.github.io/posts/vue2.5%E5%8E%BB%E5%93%AA%E5%84%BF%E7%BD%91app%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Thu, 15 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/vue2.5%E5%8E%BB%E5%93%AA%E5%84%BF%E7%BD%91app%E5%BC%80%E5%8F%91/</guid>
+      <description>Vue2.5去哪儿网app开发 引言 目录  Vue2.5去哪儿网app开发  引言 目录 第1章 课程介绍  1-1 课程简介   第2章 Vue 起步  2-1 课程学习方法 2-2 hello world 2-3 开发TodoList（v-model、v-for、v-on） 2-4 MVVM模式 2-5 前端组件化 2-6 使用组件改造TodoList 2-7 简单的组件间传值 2-8 章节小结   第3章 Vue 基础精讲  3-1 Vue实例 3-2 Vue实例生命周期 3-3 Vue的模版语法 3-4 计算属性,方法与侦听器 3-5 计算属性的 getter 和 setter 3-6 Vue中的样式绑定 3-7 Vue中的条件渲染 3-8 Vue中的列表渲染 3-9 Vue中的set方法   第4章 深入理解 Vue 组件  4-1 使用组件的细节点 4-2 父子组件间的数据传递 4-3 组件参数校验与非 props 特性 4-4 给组件绑定原生事件 4-5 非父子组件间的传值 4-6 在Vue中使用插槽 4-7 作用域插槽 4-8 动态组件与 v-once 指令 第5章 Vue 中的动画特效 5-1 Vue动画 - Vue中CSS动画原理 5-2 在Vue中使用 animate.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://haidongsong.github.io/posts/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://haidongsong.github.io/posts/readme/</guid>
-      <description>欢迎使用小书匠编辑器 nihao</description>
+      <description>Sumary  工作记录 app爬虫  </description>
+    </item>
+    
+    <item>
+      <title>Go语言深度学习笔记----慕课ccmouse</title>
+      <link>https://haidongsong.github.io/posts/go%E8%AF%AD%E8%A8%80%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E6%85%95%E8%AF%BEccmouse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/go%E8%AF%AD%E8%A8%80%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E6%85%95%E8%AF%BEccmouse/</guid>
+      <description>[TOC]
+第一章 课程介绍和环境安装 第一节 课程介绍 第二节 环境安装  vscode golang环境配置 https://www.cnblogs.com/nickchou/p/9038114.html 其中lint和dlv插件安装会失败 lint需要将src/github.com/golang/lint复制到 src/golang.org/x/ dlv需要到http://github.com/derekparker/delve clone下来 git clone git@github.com:derekparker/delve.git到src/golang.org/x/中，然后再将delv文件夹复制到src/github.com/derekparker/下，然后执行 go install github.com/derekparker/delv/cmd/dlv  第二章 Go语法 第一节 变量 第二节 常量 第三节 循环语句 if语句 switch语句 for语句 第四节函数 第五节 指针 值交换 第六节 数组 第七节 切片 第八节 Map 第九节 字符串 ##第三章 面向对象
+第一节 结构体和方法 第二节 包 第三节 GOPATH环境变量 第四章 接口 第一节 duck typeing 第二节 接口的值类型 第三节接口的组合 </description>
+    </item>
+    
+    <item>
+      <title>Mongodb</title>
+      <link>https://haidongsong.github.io/posts/mongodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/mongodb/</guid>
+      <description>mongoDB 命令行操作enter description herehttps://www.runoob.com/python3/python-mongodb.html</description>
+    </item>
+    
+    <item>
+      <title>pycharm2018激活终极办法</title>
+      <link>https://haidongsong.github.io/posts/pycharm2018%E6%BF%80%E6%B4%BB%E7%BB%88%E6%9E%81%E5%8A%9E%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/pycharm2018%E6%BF%80%E6%B4%BB%E7%BB%88%E6%9E%81%E5%8A%9E%E6%B3%95/</guid>
+      <description>&amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-family:&amp;amp;quot;PingFang SC&amp;amp;quot;, &amp;amp;quot;Microsoft YaHei&amp;amp;quot;, SimHei, Arial, SimSun;word-break:break-all;&amp;quot;&amp;gt;   &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;padding-bottom:16px;margin-top:36px;border-bottom:1px solid rgb(227, 227, 227);&amp;quot;&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-size:12px;color:rgb(153, 153, 153);&amp;quot;&amp;gt; 版权声明：本文为博主原创文章，未经博主允许不得转载。	https://blog.csdn.net/qq_22703355/article/details/79268025	&amp;lt;/div&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;margin-bottom:8px;font-size:12px;margin-top:18px;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;box-sizing:inherit;outline:0px;color:rgb(77, 77, 77);&amp;quot;&amp;gt;文章标签：&amp;lt;/span&amp;gt; &amp;lt;a href=&amp;quot;http://so.csdn.net/so/search/s.do?q=python&amp;amp;amp;t=blog&amp;quot; target=&amp;quot;_blank&amp;quot; style=&amp;quot;color:rgb(77, 77, 77);cursor:pointer;text-decoration:none;outline:0px;box-sizing:inherit;display:inline-block;word-break:break-all;border:1px solid rgb(204, 204, 204);border-radius:100px;padding:0px 8px;text-align:center;line-height:24px;min-width:24px;height:24px;margin-right:8px;&amp;quot;&amp;gt;python	&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-size:12px;margin-bottom:0px;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;box-sizing:inherit;outline:0px;color:rgb(77, 77, 77);&amp;quot;&amp;gt;个人分类：&amp;lt;/span&amp;gt; &amp;lt;a href=&amp;quot;https://blog.csdn.net/qq_22703355/article/category/7387999&amp;quot; target=&amp;quot;_blank&amp;quot; style=&amp;quot;box-sizing:inherit;outline:0px;text-decoration:none;cursor:pointer;display:inline-block;margin-right:24px;color:rgb(200, 131, 38);word-break:break-all;&amp;quot;&amp;gt;python基础	&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;margin-top:8px;background:rgb(255, 255, 255);box-shadow:rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;&amp;quot;&amp;gt;&amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://blog.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu安装及Python环境的配置</title>
+      <link>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</guid>
+      <description>[toc]
+Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装 1.1 分区  查看系统BIOS模式 win+R, 输入msinfo32, 得到系统信息,这里我的BIOS模式是传统模式（MBR），所以这里以MBR为例  下载ubuntu系统 链接： https://www.ubuntu.com/download/desktop 这里LTS表示长期维护版本，也就2年。下面那个是最新版，根据需求喜好随便下载一个，这里我以ubuntu18.04 LTS为例  分出空闲空间 快捷键“win+X”-&amp;gt;“磁盘管理”-&amp;gt;“压缩卷”（Windows安装在固态硬盘则压缩固态硬盘，机械硬盘同理），压缩完之后会多出了一块“未分配空间”。我的固态是250G，我选择分108G（110592M）给Ubuntu，这里根据需要分就行，磁盘小分40g也够用。下图是我安装好双系统后被分出去的空间使用情况，刚分完108g是一块黑的   1.2 设置u盘启动  制作U盘启动盘 下载链接：https://rufus.ie/zh_CN.html 这里使用的是Rufus，选好下载的镜像，分区方案选择第一个（因为是装MBR的，UEFI就选第二个）其他默认就行  重启电脑 让自己的电脑从U盘启动，如果你的电脑是mbr格式，就不要以UEFI的格式进入，如果你的电脑是GPT格式，则必须以UEFI格式进入。我的是联想电脑，关机状态下，按开关键旁边的恢复按键即可进入BIOS菜单  1.3 安装ubuntu  install ubuntu 进入Boot menu选择界面，选择“Istall Ubuntu”，图形化的安装界面，软件暂时不要安装，继续，当出现要手动分盘符的时候，请选择“其它选项  分区 给108G空间进行分区操作，分配4个区间，分区时候选中空闲空间点下面加号 分区的时候如果碰到分区一块后无法再分，那是因为系统只能识别4块主分区，windows已经占了3个，可以先分其他区，再分主分区,一下是我的分区示例      目录 建议大小 格式 描述     / 50G ext4 根目录   swap 物理内存的两倍 swap 交换空间：交换分区相当于Windows中的“虚拟内存”，如果内存低的话（1-4G），物理内存的两倍，高点的话（8-16G）要么等于物理内存，要么物理内存+2g左右，   /boot 200M ext4 空间起始位置 分区格式为ext4 /boot 建议：应该大于400MB或1GB Linux的内核及引导系统程序所需要的文件，比如 vmlinuz initrd.</description>
     </item>
     
     <item>
@@ -137,27 +174,16 @@ preview_previewType元数据，可用的值为normal和presentation．用于文�
       <guid>https://haidongsong.github.io/posts/%E5%B0%8F%E4%B9%A6%E5%8C%A0%E8%AF%AD%E6%B3%95%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</guid>
       <description>[toc!?theme=gray&amp;amp;depth=4]
 常用语法  标题 这是 H1 一级标题 ====== 这是 H2 二级标题 ------ # 这是 H1 一级标题 ## 这是 H2 二级标题 ### 这是 H3 三级标题 #### 这是 H4 四级标题 ##### 这是 H5 五级标题 ###### 这是 H6 六级标题 快捷键: [ctrl + h]
-列表 无序列表 * 项目1 * 子项目1.1 * 子项目1.2 * 子项目1.2.1 * 项目2 * 项目3 + 项目1 + 子项目1.1 + 子项目1.2 + 子项目1.2.1 + 项目2 + 项目3 - 项目1 - 子项目1.1 - 子项目1.</description>
+列表 无序列表 * 项目1 * 子项目1.1 * 子项目1.2 * 子项目1.2.1 * 项目2 * 项目3 * + 项目1 + 子项目1.1 + 子项目1.2 + 子项目1.2.1 + 项目2 + 项目3 - 项目1 - 子项目1.</description>
     </item>
     
     <item>
-      <title>工作记录</title>
-      <link>https://haidongsong.github.io/posts/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC/</link>
+      <title>投资</title>
+      <link>https://haidongsong.github.io/posts/%E6%8A%95%E8%B5%84/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://haidongsong.github.io/posts/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95-%E5%89%AF%E6%9C%AC/</guid>
-      <description>[toc]
-工作记录 jan 30 gantt dateFormat YYY-MM-DD-HH title 学习计划 section 1 craw: 2020-01-30-00, 6h section 2 django: 2020-01-30-18, 6h section 3 mongodb: 2020-01-31-00, 6h </description>
-    </item>
-    
-    <item>
-      <title>工作记录</title>
-      <link>https://haidongsong.github.io/posts/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://haidongsong.github.io/posts/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/</guid>
-      <description>[toc]
-工作记录 jan 30 gantt dateFormat YYY-MM-DD-HH title 学习计划 section 1 craw: 2020-01-30-00, 6h section 2 django: 2020-01-30-18, 6h section 3 mongodb: 2020-01-31-00, 6h </description>
+      <guid>https://haidongsong.github.io/posts/%E6%8A%95%E8%B5%84/</guid>
+      <description></description>
     </item>
     
   </channel>

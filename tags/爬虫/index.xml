@@ -6,22 +6,18 @@
     <description>Recent content in 爬虫 on Hugo Theme Dream</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
+    <lastBuildDate>Sun, 17 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://haidongsong.github.io/tags/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>app爬虫</title>
-      <link>https://haidongsong.github.io/posts/app%E7%88%AC%E8%99%AB/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>从零起步 系统入门Python爬虫工程师</title>
+      <link>https://haidongsong.github.io/posts/%E4%BB%8E%E9%9B%B6%E8%B5%B7%E6%AD%A5-%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88/</link>
+      <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://haidongsong.github.io/posts/app%E7%88%AC%E8%99%AB/</guid>
-      <description>[toc]
-APP抓取 环境搭建 安装fiddler  设置switchypmega后，没有办法联网．不设置抓不到数据  genymotion的安装和填坑指南   下载死慢死慢　７ｋ左右
-  已经解决（突然就好了）．．．可能网络问题，等等就好，神经病一样的网络．
-  附件提供下载包
-  # 安装virtualbox sudo apt install virtualbox -y cd ~/Downloads/ chmod u+x ./genymotion-3.0.2-linux_x64.bin sudo ./genymotion-3.0.2-linux_x64.bin -d ~/opt #起别名 #让命令别名永久生效： gedit ~/.bashrc 在~/bashrc文件中追加alias genymotion=&amp;quot;~/opt/genymotion/genymotion&amp;rdquo; ,再source即可立即生效。 https://pan.baidu.com/s/1kUAftyR
-解决镜像下载慢的问题  genymotion默认的路径是~/.Genymobile, 这个文件夹下有个日志文件genymotion.log。或者全局搜索cd / &amp;amp;&amp;amp; sudo find ./ -name Genymobile，查看genymotion.log：vim - - genymotion.log, 然后找到类似Starting download of http://dl.genymotion.com/dists/5.0.0/ova/genymotion_vbox86p_5.0_170928_172212.ova （在最后几行），把这个地址copy出来去浏览器下载。 下载后将.ova文件cp到~/.Genymotion/Genymotion/ova/下，重新操作gui配置镜像，发现可以直接用了．  解决拖拽不能安装apk问题  下载附件genymotion-arm-translation_v1.1.zip 启动genymotion,在手机界面把这个zip文件拖到手机屏幕上,点确定安装,之后提示重启,重启之后，就不会有兼容性的问题了（安卓9.0版本不行，７．１之前的都可以，其他未作测试）   解决安装应用不兼容  下载附件Genymotion-ARM-Translation .</description>
+      <guid>https://haidongsong.github.io/posts/%E4%BB%8E%E9%9B%B6%E8%B5%B7%E6%AD%A5-%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88/</guid>
+      <description>第一章 环境搭建 网络爬虫了解 快捷键 作用 第二章计算机网络协议基础  推荐书本 ==TCP/IP协议族 #F44336== ==计算机网络（第六版） #F44336==   ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接   不要急着找防火墙，redis，等乱七八糟的问题 出现错误百度说可能是redis-server没有开启，安装redis时发现防火墙没有开启，打开services.msc时发现所有安全相关的服务都无法开启，然后改注册表，更新系统，修复系统，360急救箱拯救系统，杀毒，试了一遍都没用。搞了两个小时啥用没有。睡觉时突然想到可能360管理的启动项关了，第二天起来搞了一下发现系统的安全服务都能用了,但是服务还是全部为灰色，不管了，能用就行。修好系统，装好redis，返回pycharm后，运行client确实没问题了，多疑的我把redis关了又试了一遍，发现还不报错。细看了一下，发现出错是因为要先运行server端。一切回到了最初。废了近四个小时，只因为一点粗心，留念谨记！先思考，在百度！   python基本语法  第四章 爬虫初体验 多线程和线程池操作 实现模拟登陆和验证码 爬虫和反爬虫 如何成为高级的爬虫工程师 </description>
     </item>
     
   </channel>

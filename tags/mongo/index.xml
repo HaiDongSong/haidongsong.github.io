@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mongo on Hugo Theme Dream</title>
+    <link>https://haidongsong.github.io/tags/mongo/</link>
+    <description>Recent content in mongo on Hugo Theme Dream</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <lastBuildDate>Sat, 17 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://haidongsong.github.io/tags/mongo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>操作三大数据库</title>
+      <link>https://haidongsong.github.io/posts/%E6%93%8D%E4%BD%9C%E4%B8%89%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/%E6%93%8D%E4%BD%9C%E4%B8%89%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <description>test</description>
+    </item>
+    
+  </channel>
+</rss>

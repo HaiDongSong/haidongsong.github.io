@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vue on Hugo Theme Dream</title>
+    <link>https://haidongsong.github.io/tags/vue/</link>
+    <description>Recent content in vue on Hugo Theme Dream</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <lastBuildDate>Thu, 15 Dec 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://haidongsong.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vue2.5去哪儿网app开发</title>
+      <link>https://haidongsong.github.io/posts/vue2.5%E5%8E%BB%E5%93%AA%E5%84%BF%E7%BD%91app%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Thu, 15 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/vue2.5%E5%8E%BB%E5%93%AA%E5%84%BF%E7%BD%91app%E5%BC%80%E5%8F%91/</guid>
+      <description>Vue2.5去哪儿网app开发 引言 目录  Vue2.5去哪儿网app开发  引言 目录 第1章 课程介绍  1-1 课程简介   第2章 Vue 起步  2-1 课程学习方法 2-2 hello world 2-3 开发TodoList（v-model、v-for、v-on） 2-4 MVVM模式 2-5 前端组件化 2-6 使用组件改造TodoList 2-7 简单的组件间传值 2-8 章节小结   第3章 Vue 基础精讲  3-1 Vue实例 3-2 Vue实例生命周期 3-3 Vue的模版语法 3-4 计算属性,方法与侦听器 3-5 计算属性的 getter 和 setter 3-6 Vue中的样式绑定 3-7 Vue中的条件渲染 3-8 Vue中的列表渲染 3-9 Vue中的set方法   第4章 深入理解 Vue 组件  4-1 使用组件的细节点 4-2 父子组件间的数据传递 4-3 组件参数校验与非 props 特性 4-4 给组件绑定原生事件 4-5 非父子组件间的传值 4-6 在Vue中使用插槽 4-7 作用域插槽 4-8 动态组件与 v-once 指令 第5章 Vue 中的动画特效 5-1 Vue动画 - Vue中CSS动画原理 5-2 在Vue中使用 animate.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>面试 on Hugo Theme Dream</title>
+    <link>https://haidongsong.github.io/tags/%E9%9D%A2%E8%AF%95/</link>
+    <description>Recent content in 面试 on Hugo Theme Dream</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <lastBuildDate>Tue, 19 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://haidongsong.github.io/tags/%E9%9D%A2%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python服务端工程师就业面试指导</title>
+      <link>https://haidongsong.github.io/posts/python%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B0%B1%E4%B8%9A%E9%9D%A2%E8%AF%95%E6%8C%87%E5%AF%BC/</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/python%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%B0%B1%E4%B8%9A%E9%9D%A2%E8%AF%95%E6%8C%87%E5%AF%BC/</guid>
+      <description>数据结构 数据库 </description>
+    </item>
+    
+  </channel>
+</rss>
