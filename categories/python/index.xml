@@ -38,6 +38,15 @@ sudo dpkg -i teamviewer* #出错或者无法启动 sudo apt install -f mongodb�
     </item>
     
     <item>
+      <title>Mongodb</title>
+      <link>https://haidongsong.github.io/posts/mongodb/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/mongodb/</guid>
+      <description>mongoDB 命令行操作enter description herehttps://www.runoob.com/python3/python-mongodb.html</description>
+    </item>
+    
+    <item>
       <title>全面系统 Python3入门与进阶</title>
       <link>https://haidongsong.github.io/posts/%E5%85%A8%E9%9D%A2%E7%B3%BB%E7%BB%9F-python3%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/</link>
       <pubDate>Thu, 17 Oct 2019 00:00:00 +0000</pubDate>
@@ -82,15 +91,6 @@ sudo dpkg -i teamviewer* #出错或者无法启动 sudo apt install -f mongodb�
       
       <guid>https://haidongsong.github.io/posts/%E4%BB%8E%E9%9B%B6%E8%B5%B7%E6%AD%A5-%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88/</guid>
       <description>第一章 环境搭建 网络爬虫了解 快捷键 作用 第二章计算机网络协议基础  推荐书本 ==TCP/IP协议族 #F44336== ==计算机网络（第六版） #F44336==   ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接   不要急着找防火墙，redis，等乱七八糟的问题 出现错误百度说可能是redis-server没有开启，安装redis时发现防火墙没有开启，打开services.msc时发现所有安全相关的服务都无法开启，然后改注册表，更新系统，修复系统，360急救箱拯救系统，杀毒，试了一遍都没用。搞了两个小时啥用没有。睡觉时突然想到可能360管理的启动项关了，第二天起来搞了一下发现系统的安全服务都能用了,但是服务还是全部为灰色，不管了，能用就行。修好系统，装好redis，返回pycharm后，运行client确实没问题了，多疑的我把redis关了又试了一遍，发现还不报错。细看了一下，发现出错是因为要先运行server端。一切回到了最初。废了近四个小时，只因为一点粗心，留念谨记！先思考，在百度！   python基本语法  第四章 爬虫初体验 多线程和线程池操作 实现模拟登陆和验证码 爬虫和反爬虫 如何成为高级的爬虫工程师 </description>
-    </item>
-    
-    <item>
-      <title>Mongodb</title>
-      <link>https://haidongsong.github.io/posts/mongodb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://haidongsong.github.io/posts/mongodb/</guid>
-      <description>mongoDB 命令行操作enter description herehttps://www.runoob.com/python3/python-mongodb.html</description>
     </item>
     
     <item>
