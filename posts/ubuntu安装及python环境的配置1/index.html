@@ -656,7 +656,7 @@ pipenv --two <span style="color:#75715e"># python2</span>
 <script src="/js/theme.js"></script>
 <script src="/js/html2canvas.min.js"></script>
 
-<script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js"></script>
+
 
 
   
@@ -672,6 +672,13 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
+
+<script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js"></script>
+<script>
+    window.onload = function() {
+        mermaid.init(undefined, ".language-mermaid");
+    };
+</script>
 
   </body>
 </html>
