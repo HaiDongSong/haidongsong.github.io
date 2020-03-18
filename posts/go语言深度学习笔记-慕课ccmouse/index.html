@@ -389,6 +389,141 @@ go install github.com/derekparker/delv/cmd/dlv</li>
 
   </div>
 </div>
+<main>
+    <article>
+    <header>
+        <h1>Go语言深度学习笔记----慕课ccmouse</h1>
+    </header>
+        <p>[TOC]</p>
+<h2 id="第一章-课程介绍和环境安装">第一章 课程介绍和环境安装</h2>
+<h3 id="第一节-课程介绍">第一节 课程介绍</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766899.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766897.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766955.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766963.png" alt="Alt text"></p>
+<h3 id="第二节-环境安装">第二节 环境安装</h3>
+<ul>
+<li><input disabled="" type="checkbox">vscode golang环境配置
+<a href="https://www.cnblogs.com/nickchou/p/9038114.html">https://www.cnblogs.com/nickchou/p/9038114.html</a>
+其中lint和dlv插件安装会失败
+lint需要将src/github.com/golang/lint复制到 src/golang.org/x/
+dlv需要到http://github.com/derekparker/delve   clone下来
+git clone <a href="mailto:git@github.com">git@github.com</a>:derekparker/delve.git到src/golang.org/x/中，然后再将delv文件夹复制到src/github.com/derekparker/下，然后执行
+go install github.com/derekparker/delv/cmd/dlv</li>
+</ul>
+<h2 id="第二章-go语法">第二章 Go语法</h2>
+<h3 id="第一节-变量">第一节 变量</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766926.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766895.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766957.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766985.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766961.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766967.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766965.png" alt="Alt text"></p>
+<h3 id="第二节-常量">第二节 常量</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766969.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766974.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766971.png" alt="Alt text"></p>
+<h3 id="第三节-循环语句">第三节 循环语句</h3>
+<h4 id="if语句">if语句</h4>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766979.png" alt="Alt text"></p>
+<h4 id="switch语句">switch语句</h4>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766977.png" alt="Alt text"></p>
+<h4 id="for语句">for语句</h4>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766983.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766980.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766987.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767970.png" alt="Alt text"></p>
+<h3 id="第四节函数">第四节函数</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767984.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767979.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767973.png" alt="Alt text"></p>
+<h3 id="第五节-指针">第五节 指针</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427701689.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427701713.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427768276.png" alt="Alt text">
+值交换
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427701551.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427701937.png" alt="Alt text"></p>
+<h3 id="第六节-数组">第六节 数组</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427768274.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427768279.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427768283.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427768405.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427768280.png" alt="Alt text"></p>
+<h3 id="第七节-切片">第七节 切片</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427768404.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427768281.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427768282.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427768411.png" alt="Alt text"></p>
+<h3 id="第八节-map">第八节 Map</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766395.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427766989.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767363.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767386.png" alt="Alt text"></p>
+<h3 id="第九节-字符串">第九节 字符串</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767391.png" alt="Alt text"></p>
+<p>##第三章 面向对象</p>
+<h3 id="第一节-结构体和方法">第一节 结构体和方法</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767460.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767659.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767667.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767641.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767681.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427701590.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767642.png" alt="Alt text"></p>
+<h3 id="第二节-包">第二节 包</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767645.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767647.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767649.png" alt="Alt text"></p>
+<h3 id="第三节-gopath环境变量">第三节 GOPATH环境变量</h3>
+<h3 id="第四章-接口">第四章 接口</h3>
+<h3 id="第一节-duck-typeing">第一节 duck typeing</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767651.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767654.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767968.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767964.png" alt="Alt text"></p>
+<h3 id="第二节-接口的值类型">第二节 接口的值类型</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767981.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427767982.png" alt="Alt text"></p>
+<h3 id="第三节接口的组合">第三节接口的组合</h3>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427701938.png" alt="Alt text">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584427768039.png" alt="Alt text"></p>
+
+    </article>
+    <aside>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#第一章-课程介绍和环境安装">第一章 课程介绍和环境安装</a>
+      <ol>
+        <li><a href="#第一节-课程介绍">第一节 课程介绍</a></li>
+        <li><a href="#第二节-环境安装">第二节 环境安装</a></li>
+      </ol>
+    </li>
+    <li><a href="#第二章-go语法">第二章 Go语法</a>
+      <ol>
+        <li><a href="#第一节-变量">第一节 变量</a></li>
+        <li><a href="#第二节-常量">第二节 常量</a></li>
+        <li><a href="#第三节-循环语句">第三节 循环语句</a></li>
+        <li><a href="#第四节函数">第四节函数</a></li>
+        <li><a href="#第五节-指针">第五节 指针</a></li>
+        <li><a href="#第六节-数组">第六节 数组</a></li>
+        <li><a href="#第七节-切片">第七节 切片</a></li>
+        <li><a href="#第八节-map">第八节 Map</a></li>
+        <li><a href="#第九节-字符串">第九节 字符串</a></li>
+        <li><a href="#第一节-结构体和方法">第一节 结构体和方法</a></li>
+        <li><a href="#第二节-包">第二节 包</a></li>
+        <li><a href="#第三节-gopath环境变量">第三节 GOPATH环境变量</a></li>
+        <li><a href="#第四章-接口">第四章 接口</a></li>
+        <li><a href="#第一节-duck-typeing">第一节 duck typeing</a></li>
+        <li><a href="#第二节-接口的值类型">第二节 接口的值类型</a></li>
+        <li><a href="#第三节接口的组合">第三节接口的组合</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </aside>
+</main>
 
         </section>
         <section class="back">
