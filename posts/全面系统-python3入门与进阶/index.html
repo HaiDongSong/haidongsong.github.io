@@ -81,6 +81,190 @@
 </nav>
 
           
+<main>
+    <article>
+    <header>
+        <h1>全面系统 Python3入门与进阶</h1>
+    </header>
+        <h1 id="第一章">第一章</h1>
+<h2 id="基本类型和注意">基本类型和注意</h2>
+<ul>
+<li>
+<p>number(int float  bool  )complex str tuple list set dict</p>
+</li>
+<li>
+<p>type(2//2)  int</p>
+</li>
+<li>
+<p>type(2/2)  float</p>
+</li>
+<li>
+<p>数字交换</p>
+</li>
+<li>
+<p>‘’  ， “” ， ‘’‘  ’‘’， “”“  ”“”区别</p>
+</li>
+<li>
+<p>bool(0),bool([]),bool({}),bool('') =flase</p>
+</li>
+<li>
+<p>&lsquo;let's go&rsquo;  转义字符</p>
+</li>
+<li></li>
+</ul>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498226.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498229.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498247.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498249.png" alt="enter description here"></p>
+<h2 id="组的概念序列--str-list-tuple">组的概念（序列）&ndash;str list tuple</h2>
+<ul>
+<li>
+<p>表示组的方式有很多种</p>
+</li>
+<li>
+<p>[1,2,3,4,5,6]&ndash;列表</p>
+</li>
+<li>
+<p>嵌套列表（二维数组）</p>
+</li>
+<li>
+<p>元组和列表的区别()  []
+*<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498252.png" alt="enter description here"></p>
+</li>
+<li>
+<p>序列共有的操作</p>
+</li>
+<li>
+<p>切片
+*<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498254.png" alt="enter description here"></p>
+</li>
+<li>
+<p>ord(&lsquo;d&rsquo;) ascii码转换</p>
+</li>
+<li>
+<p>集合特点</p>
+</li>
+<li>
+<p>无序</p>
+</li>
+<li>
+<p>去重复</p>
+</li>
+<li>
+<p>dict 有序，有很多key，value，{}表示，集合类型（set）。</p>
+</li>
+<li>
+<p>dict中不能有重复的，不出错，但自动去掉了</p>
+</li>
+<li>
+<p>dict中key可以是number、str。。。不可变类型</p>
+</li>
+<li>
+<p>集合：是无序的，不支持下标索引，它是可变的数据类型，集合中的元素是唯一的，一般用于元组或者列表中的元素去重
+<a href="https://www.cnblogs.com/huangqihui/p/9270759.html">https://www.cnblogs.com/huangqihui/p/9270759.html</a></p>
+</li>
+</ul>
+<h1 id="变量运算符">变量、运算符</h1>
+<ul>
+<li>命名  ；1 字母 数字 下划线； 2关键字不能用</li>
+<li>int str tuple （值类型），list set dict（引用类型）
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498058.png" alt="enter description here"></li>
+<li>id()  内存地址</li>
+<li>加减运算符优先级小于比较运算符</li>
+<li>not返回true和false</li>
+<li>成员运算符 in  not in</li>
+<li>身份运算符 is not is
+*<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498096.png" alt="enter description here"></li>
+<li>isinstance(a,str)判断类型函数</li>
+<li>对象的三个特征  id value type&ndash;is ，==， isinstance（不建议用type判断）</li>
+</ul>
+<h1 id="分支循环条件枚举">分支，循环，条件，枚举</h1>
+<ul>
+<li>not&gt;and&gt;or优先级
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498257.png" alt="enter description here"></li>
+<li>vscode插件</li>
+<li>pylint格式规范，  sinppet（tab键值跳转）
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498119.png" alt="enter description here"></li>
+<li>break continue</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">10</span>):
+    <span style="color:#66d9ef">print</span>(x)
+   
+</code></pre></div><p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498141.png" alt="enter description here">
+* 会写代码，非常容易
+* 高性能、封装性（可复用）、抽象
+# 包，模块，函数，变量作用域
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498163.png" alt="enter description here">
+* <strong>init</strong>.py   批量导入包，控制模块输出
+* 包和模块不会被重复导入，
+# 面向对象
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498198.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498266.png" alt="enter description here">
+* 构造函数
+* 构造函数自动运行，实例化的时候就调用了，不能随便返回值，只能返回 None
+* 构造函数让模板生成不同的对象，初始化对象的属性
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498275.png" alt="enter description here">
+# 正则表达式和JSON
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498210.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498285.png" alt="enter description here">
+* ？贪婪非贪婪、字符串取0或者1次
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498212.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498224.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498287.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498524.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498552.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498392.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498566.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498580.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498409.png" alt="enter description here"></p>
+<hr>
+<ul>
+<li>大小写快速切换，页面切换、快速删整行</li>
+</ul>
+<hr>
+<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498611.png" alt="enter description here"></p>
+<h1 id="python高级语法和用法">python高级语法和用法</h1>
+<ul>
+<li>枚举类型enum</li>
+<li>函数
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498431.png" alt="enter description here"></li>
+<li>函数 = 函数 +  环境变量</li>
+<li>现场
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498612.png" alt="enter description here"></li>
+</ul>
+<h1 id="函数式编程匿名函数高阶函数装饰器">函数式编程：匿名函数、高阶函数、装饰器</h1>
+<ul>
+<li>lanmbda表达式,三元表达式
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498433.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498434.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498653.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498654.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498655.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498656.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498657.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498819.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498770.png" alt="enter description here"></li>
+</ul>
+<h1 id="杂记录">杂记录</h1>
+<ul>
+<li>字典代替switch&hellip;case
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498802.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498818.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498828.png" alt="  ">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498829.png" alt="enter description here">
+<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498830.png" alt="enter description here"></li>
+</ul>
+
+    </article>
+    <aside>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#基本类型和注意">基本类型和注意</a></li>
+    <li><a href="#组的概念序列--str-list-tuple">组的概念（序列）&ndash;str list tuple</a></li>
+  </ul>
+</nav>
+    </aside>
+</main>
 <div class="ui centered relaxed grid dream-grid">
   <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single">
 
@@ -462,190 +646,7 @@
 
   </div>
 </div>
-<main>
-    <article>
-    <header>
-        <h1>全面系统 Python3入门与进阶</h1>
-    </header>
-        <h1 id="第一章">第一章</h1>
-<h2 id="基本类型和注意">基本类型和注意</h2>
-<ul>
-<li>
-<p>number(int float  bool  )complex str tuple list set dict</p>
-</li>
-<li>
-<p>type(2//2)  int</p>
-</li>
-<li>
-<p>type(2/2)  float</p>
-</li>
-<li>
-<p>数字交换</p>
-</li>
-<li>
-<p>‘’  ， “” ， ‘’‘  ’‘’， “”“  ”“”区别</p>
-</li>
-<li>
-<p>bool(0),bool([]),bool({}),bool('') =flase</p>
-</li>
-<li>
-<p>&lsquo;let's go&rsquo;  转义字符</p>
-</li>
-<li></li>
-</ul>
-<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498226.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498229.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498247.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498249.png" alt="enter description here"></p>
-<h2 id="组的概念序列--str-list-tuple">组的概念（序列）&ndash;str list tuple</h2>
-<ul>
-<li>
-<p>表示组的方式有很多种</p>
-</li>
-<li>
-<p>[1,2,3,4,5,6]&ndash;列表</p>
-</li>
-<li>
-<p>嵌套列表（二维数组）</p>
-</li>
-<li>
-<p>元组和列表的区别()  []
-*<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498252.png" alt="enter description here"></p>
-</li>
-<li>
-<p>序列共有的操作</p>
-</li>
-<li>
-<p>切片
-*<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498254.png" alt="enter description here"></p>
-</li>
-<li>
-<p>ord(&lsquo;d&rsquo;) ascii码转换</p>
-</li>
-<li>
-<p>集合特点</p>
-</li>
-<li>
-<p>无序</p>
-</li>
-<li>
-<p>去重复</p>
-</li>
-<li>
-<p>dict 有序，有很多key，value，{}表示，集合类型（set）。</p>
-</li>
-<li>
-<p>dict中不能有重复的，不出错，但自动去掉了</p>
-</li>
-<li>
-<p>dict中key可以是number、str。。。不可变类型</p>
-</li>
-<li>
-<p>集合：是无序的，不支持下标索引，它是可变的数据类型，集合中的元素是唯一的，一般用于元组或者列表中的元素去重
-<a href="https://www.cnblogs.com/huangqihui/p/9270759.html">https://www.cnblogs.com/huangqihui/p/9270759.html</a></p>
-</li>
-</ul>
-<h1 id="变量运算符">变量、运算符</h1>
-<ul>
-<li>命名  ；1 字母 数字 下划线； 2关键字不能用</li>
-<li>int str tuple （值类型），list set dict（引用类型）
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498058.png" alt="enter description here"></li>
-<li>id()  内存地址</li>
-<li>加减运算符优先级小于比较运算符</li>
-<li>not返回true和false</li>
-<li>成员运算符 in  not in</li>
-<li>身份运算符 is not is
-*<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498096.png" alt="enter description here"></li>
-<li>isinstance(a,str)判断类型函数</li>
-<li>对象的三个特征  id value type&ndash;is ，==， isinstance（不建议用type判断）</li>
-</ul>
-<h1 id="分支循环条件枚举">分支，循环，条件，枚举</h1>
-<ul>
-<li>not&gt;and&gt;or优先级
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498257.png" alt="enter description here"></li>
-<li>vscode插件</li>
-<li>pylint格式规范，  sinppet（tab键值跳转）
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498119.png" alt="enter description here"></li>
-<li>break continue</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">10</span>):
-    <span style="color:#66d9ef">print</span>(x)
-   
-</code></pre></div><p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498141.png" alt="enter description here">
-* 会写代码，非常容易
-* 高性能、封装性（可复用）、抽象
-# 包，模块，函数，变量作用域
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498163.png" alt="enter description here">
-* <strong>init</strong>.py   批量导入包，控制模块输出
-* 包和模块不会被重复导入，
-# 面向对象
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498198.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498266.png" alt="enter description here">
-* 构造函数
-* 构造函数自动运行，实例化的时候就调用了，不能随便返回值，只能返回 None
-* 构造函数让模板生成不同的对象，初始化对象的属性
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498275.png" alt="enter description here">
-# 正则表达式和JSON
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498210.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498285.png" alt="enter description here">
-* ？贪婪非贪婪、字符串取0或者1次
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498212.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498224.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498287.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498524.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498552.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498392.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498566.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498580.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498409.png" alt="enter description here"></p>
-<hr>
-<ul>
-<li>大小写快速切换，页面切换、快速删整行</li>
-</ul>
-<hr>
-<p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498611.png" alt="enter description here"></p>
-<h1 id="python高级语法和用法">python高级语法和用法</h1>
-<ul>
-<li>枚举类型enum</li>
-<li>函数
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498431.png" alt="enter description here"></li>
-<li>函数 = 函数 +  环境变量</li>
-<li>现场
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498612.png" alt="enter description here"></li>
-</ul>
-<h1 id="函数式编程匿名函数高阶函数装饰器">函数式编程：匿名函数、高阶函数、装饰器</h1>
-<ul>
-<li>lanmbda表达式,三元表达式
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498433.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498434.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498653.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498654.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498655.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498656.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498657.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498819.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498770.png" alt="enter description here"></li>
-</ul>
-<h1 id="杂记录">杂记录</h1>
-<ul>
-<li>字典代替switch&hellip;case
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498802.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498818.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498828.png" alt="  ">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498829.png" alt="enter description here">
-<img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584426498830.png" alt="enter description here"></li>
-</ul>
 
-    </article>
-    <aside>
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#基本类型和注意">基本类型和注意</a></li>
-    <li><a href="#组的概念序列--str-list-tuple">组的概念（序列）&ndash;str list tuple</a></li>
-  </ul>
-</nav>
-    </aside>
-</main>
 
         </section>
         <section class="back">
