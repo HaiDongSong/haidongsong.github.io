@@ -6,10 +6,19 @@
     <description>Recent content in progress on Bob Dylan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://haidongsong.github.io/categories/progress/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mongo实时同步数据到Elasticsearch及服务器部署</title>
+      <link>https://haidongsong.github.io/posts/mongo-es%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5/</link>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/mongo-es%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5/</guid>
+      <description>[toc] mongo实时同步数据到Elasticsearch 环境 windows7，64位（win10也可以），其他未做测试 mongo4.2 elasticsearch7.6.1 ik分词器（7.6.1</description>
+    </item>
     
     <item>
       <title>工作记录</title>
@@ -32,7 +41,7 @@
     <item>
       <title>Ubuntu安装及Python环境的配置</title>
       <link>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</guid>
       <description>[toc] Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装 1.1 分区 查看系统BIOS模式 win+R, 输入msinfo32</description>

@@ -49,6 +49,15 @@ This is my blog</description>
     </item>
     
     <item>
+      <title>Ubuntu安装及Python环境的配置</title>
+      <link>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</link>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</guid>
+      <description>[toc] Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装 1.1 分区 查看系统BIOS模式 win+R, 输入msinfo32</description>
+    </item>
+    
+    <item>
       <title>Mongodb</title>
       <link>https://haidongsong.github.io/posts/mongodb/</link>
       <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
@@ -73,15 +82,6 @@ This is my blog</description>
       
       <guid>https://haidongsong.github.io/posts/pycharm2018%E6%BF%80%E6%B4%BB%E7%BB%88%E6%9E%81%E5%8A%9E%E6%B3%95/</guid>
       <description>× 首页 博客 学院 下载 GitChat TinyMind 论坛 问答 商城 写博客 发Chat 阿文的博客 学习也是旅程，记录下沿途的风景。希望郑州的IT发展的好点儿。 RSS订阅 原 pych</description>
-    </item>
-    
-    <item>
-      <title>Ubuntu安装及Python环境的配置</title>
-      <link>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</guid>
-      <description>[toc] Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装 1.1 分区 查看系统BIOS模式 win+R, 输入msinfo32</description>
     </item>
     
     <item>
