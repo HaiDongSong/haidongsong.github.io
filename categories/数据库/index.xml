@@ -17,7 +17,7 @@
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://haidongsong.github.io/posts/mongo-es%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5/</guid>
-      <description>[toc] mongo实时同步数据到Elasticsearch 环境 windows7，64位（win10也可以），其他未做测试 mongo4.2 elasticsearch7.6.1 ik分词器（7.6.1</description>
+      <description>[TOC] mongo实时同步数据到Elasticsearch 环境 windows7，64位（win10也可以），其他未做测试 mongo4.2 elasticsearch7.6.1 ik分词器（7.6.1</description>
     </item>
     
   </channel>
