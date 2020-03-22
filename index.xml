@@ -63,7 +63,7 @@ This is my blog</description>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://haidongsong.github.io/posts/pycharm2018%E6%BF%80%E6%B4%BB%E7%BB%88%E6%9E%81%E5%8A%9E%E6%B3%95/</guid>
-      <description>&amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-family:&amp;amp;quot;PingFang SC&amp;amp;quot;, &amp;amp;quot;Microsoft YaHei&amp;amp;quot;, SimHei, Arial, SimSun;word-break:break-all;&amp;quot;&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;padding-bottom:16px;margin-top:36px;border-bottom:1px solid rgb(227, 227, 227);&amp;quot;&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;font-size:12px;color:rgb(153, 153, 153);&amp;quot;&amp;gt; 版权声明：本文为博主原创文章，未经博主允许不得转载。 https://blog.csdn.net/qq_22703355/article/details/79268025 &amp;lt;/div&amp;gt; &amp;lt;div style=&amp;quot;box-sizing:inherit;outline:0px;padding:0px;margin:0px;margin-bottom:8px;font-size:12px;margin-top:18px;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;box-sizing:inherit;outline:0px;color:rgb(77, 77, 77);&amp;quot;&amp;gt;文章标签：</description>
+      <description>× 首页 博客 学院 下载 GitChat TinyMind 论坛 问答 商城 写博客 发Chat 阿文的博客 学习也是旅程，记录下沿途的风景。希望郑州的IT发展的好点儿。 RSS订阅 原 pych</description>
     </item>
     
     <item>
@@ -108,7 +108,7 @@ This is my blog</description>
       <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://haidongsong.github.io/posts/%E4%BB%8E%E9%9B%B6%E8%B5%B7%E6%AD%A5-%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8python%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88/</guid>
-      <description>第一章 环境搭建 网络爬虫了解 快捷键 作用 第二章计算机网络协议基础 推荐书本 ==TCP/IP协议族 #F44336== ==计算机网络（第六版） #F44336== ConnectionRefusedError: [WinError 10061] 由于目标计算机积</description>
+      <description>第一章 环境搭建 网络爬虫了解 快捷键 作用 第二章计算机网络协议基础 推荐书本 ==TCP/IP协议族 #F44336== ==计算机网络（第六版） #F44336== &amp;nbsp; ConnectionRefusedError: [WinError 10061] 由于目标计算机</description>
     </item>
     
     <item>
@@ -131,11 +131,29 @@ This is my blog</description>
     
     <item>
       <title></title>
+      <link>https://haidongsong.github.io/posts/mongo4.2-es7.6.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/mongo4.2-es7.6.1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://haidongsong.github.io/posts/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://haidongsong.github.io/posts/readme/</guid>
       <description>Sumary 工作记录 app爬虫</description>
+    </item>
+    
+    <item>
+      <title>mongo实时同步数据到Elasticsearch及服务器部署</title>
+      <link>https://haidongsong.github.io/posts/mongo-es%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/mongo-es%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5/</guid>
+      <description>[toc] mongo实时同步数据到Elasticsearch 环境 windows7，64位（win10也可以），其他未做测试 mongo4.2 elasticsearch7.6.1 ik分词器（7.6.1</description>
     </item>
     
     <item>

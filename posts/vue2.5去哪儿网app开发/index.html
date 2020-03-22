@@ -218,19 +218,84 @@ Vue2.5去哪儿网app开发
 <h3 id="2-2-hello-world">2-2 hello world</h3>
 <p>  <strong>vue不支持IE8以下及以下的 浏览器</strong>
   <strong>我们在学习中用开发版本，有完整的代码提示和环境。</strong></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre>var app = new Vue({
+    el: '#app', //定义起作用的区域。
+    data: {
+                content: 'hello world'
+        }
+})
+</pre>
 <h3 id="2-3-开发todolistv-modelv-forv-on">2-3 开发TodoList（v-model、v-for、v-on）</h3>
 <p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584428105421.png" alt="enter description here"></p>
 <h3 id="2-4-mvvm模式">2-4 MVVM模式</h3>
 <p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584428121776.png" alt="enter description here"></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre><body>
+    <div id = 'app'>
+        <input type="text" v-model="inputValue">
+        <button v-on:click="handleBtnClick">ok</button>
+        <ul>
+            <li v-for:="item in list">{{ item }}</li>
+        </ul>
+    </div>
+
+    <script>
+
+    var app = new Vue({
+        el: '#app',
+        data:{
+            list: [],
+            inputValue: ''
+
+        },
+        methods: {
+            handleBtnClick: function() {
+                this.list.push(this.inputValue)
+                this.inputValue = ''
+                // alert('fuck you!')
+            }
+        }
+
+    })
+
+</script>
+</body>
+</pre>
 <p><img src="https://gitee.com/margan/pictures/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/1584428140588.png" alt="enter description here"></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre><body>
+    <div id="app">
+        <input id="input" type="text" name="" >
+        <button id="btn" type="">提交</button>
+        <ul id="list">
+
+        </ul>
+    </div>
+    <script>
+        function Page() {
+
+        }
+        $.extend(Page.prototype, {
+            init: function() {
+                this.bindEvents();
+            },
+            bindEvents: function() {
+                var btn = $('#btn');
+                btn.on('click',$.proxy(this.handleBtnClick,this));
+            },
+            handleBtnClick: function() {
+                var inputElem = $('#input');
+                var ulElem = $('#list');
+
+                inputValue = inputElem.val();
+                ulElem.append('<li>' + inputValue + '</li>');
+                inputElem.val('');
+            }
+
+        });
+        var page = new Page();
+        page.init();
+    </script>
+</body>
+</pre>
 <h3 id="2-5-前端组件化">2-5 前端组件化</h3>
 <h3 id="2-6-使用组件改造todolist">2-6 使用组件改造TodoList</h3>
 <h3 id="2-7-简单的组件间传值">2-7 简单的组件间传值</h3>
@@ -254,12 +319,27 @@ Vue2.5去哪儿网app开发
 <h2 id="第4章-深入理解-vue-组件">第4章 深入理解 Vue 组件</h2>
 <h3 id="4-1-使用组件的细节点">4-1 使用组件的细节点</h3>
 <p><strong>bug：当在以下情况引用组件时最好用is指令，否则会违反html5规则。</strong></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre><table>
+    <tbody>
+        <tr is="row" ></tr>
+        <tr is="row" ></tr>
+        <tr is="row" ></tr>
+
+    </tbody>
+</table>
+</pre>
+<pre><select>
+    <option is="row" />
+    <option is="row"  />
+    <option is="row"  />
+</select>
+</pre>
+<pre><ul>
+    <li is="row"></li>
+    <li is="row"></li>
+    <li is="row"></li>
+</ul>
+</pre>
 <h3 id="4-2-父子组件间的数据传递">4-2 父子组件间的数据传递</h3>
 <h3 id="4-3-组件参数校验与非-props-特性">4-3 组件参数校验与非 props 特性</h3>
 <h3 id="4-4-给组件绑定原生事件">4-4 给组件绑定原生事件</h3>
@@ -278,8 +358,11 @@ Vue2.5去哪儿网app开发
 <h3 id="5-8-本章小节">5-8 本章小节</h3>
 <h2 id="第6章-vue-项目预热">第6章 Vue 项目预热</h2>
 <h3 id="6-1-vue项目预热---环境配置">6-1 Vue项目预热 - 环境配置</h3>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre>git status
+git add .
+git commit -m project 'initialized'
+git push
+</pre>
 <p>&lt;button &ldquo;&gt;ok</p>
 <h3 id="6-2-vue项目预热---项目代码介绍">6-2 Vue项目预热 - 项目代码介绍</h3>
 <h3 id="6-3-vue项目预热---单文件组件与">6-3 Vue项目预热 - 单文件组件与</h3>
@@ -322,8 +405,7 @@ Vue2.5去哪儿网app开发
 <h3 id="10-4-vue项目的联调测试上线---异步组件实现按需加载">10-4 Vue项目的联调测试上线 - 异步组件实现按需加载</h3>
 <h3 id="10-5-vue项目的联调测试上线---课程总结与后续学习指南">10-5 Vue项目的联调测试上线 - 课程总结与后续学习指南</h3>
 <h2 id="附录">附录</h2>
-<!-- raw HTML omitted -->
-</article>
+<center>%23%20Vue2.5%u53BB%u54EA%u513F%u7F51app%u5F00%u53D1%0A%0A%23%23%20%u5F15%u8A00%0A%0A%23%23%20%u76EE%u5F55%0A%5BTOC%5D%0A%0A%0A%23%23%20%u7B2C1%u7AE0%20%u8BFE%u7A0B%u4ECB%u7ECD%0A%0A%23%23%23%201-1%20%u8BFE%u7A0B%u7B80%u4ECB%0A%0A%23%23%20%u7B2C2%u7AE0%20Vue%20%u8D77%u6B65%0A%0A%23%23%23%202-1%20%u8BFE%u7A0B%u5B66%u4E60%u65B9%u6CD5%0A%0A%23%23%23%202-2%20hello%20world%0A%20%3Cfont%20color%3D%22%23000066%22%3E%0A%26emsp%3B%20**vue%u4E0D%u652F%u6301IE8%u4EE5%u4E0B%u53CA%u4EE5%u4E0B%u7684%20%u6D4F%u89C8%u5668%20**%0A%26emsp%3B%20%20**%u6211%u4EEC%u5728%u5B66%u4E60%u4E2D%u7528%u5F00%u53D1%u7248%u672C%uFF0C%u6709%u5B8C%u6574%u7684%u4EE3%u7801%u63D0%u793A%u548C%u73AF%u5883%u3002**%0A%0A%60%60%60javascript%0Avar%20app%20%3D%20new%20Vue%28%7B%0A%09el%3A%20%27%23app%27%2C%20//%u5B9A%u4E49%u8D77%u4F5C%u7528%u7684%u533A%u57DF%u3002%0A%09data%3A%20%7B%0A%09%09%09%09content%3A%20%27hello%20world%27%0A%09%09%7D%0A%7D%29%0A%60%60%60%0A%0A%3C/font%3E%0A%0A%20%20%0A%0A%23%23%23%202-3%20%u5F00%u53D1TodoList%uFF08v-model%u3001v-for%u3001v-on%uFF09%0A%21%5B@Alt%20text%7Ccenter%7C0*0%5D%28./1528627574905.png%29%0A%0A%0A%0A%23%23%23%202-4%20MVVM%u6A21%u5F0F%0A%0A%0A-%20%5B%20%5DMVVM%0A%21%5BMVVMt%5D%28./1528688299405.png%29%0A%0A%60%60%60%0A%3Cbody%3E%0A%20%20%20%20%3Cdiv%20id%20%3D%20%27app%27%3E%0A%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22text%22%20v-model%3D%22inputValue%22%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20v-on%3Aclick%3D%22handleBtnClick%22%3Eok%3C/button%3E%0A%20%20%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20v-for%3A%3D%22item%20in%20list%22%3E%7B%7B%20item%20%7D%7D%3C/li%3E%0A%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3Cscript%3E%0A%0A%20%20%20%20var%20app%20%3D%20new%20Vue%28%7B%0A%20%20%20%20%20%20%20%20el%3A%20%27%23app%27%2C%0A%20%20%20%20%20%20%20%20data%3A%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20list%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20inputValue%3A%20%27%27%0A%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20methods%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20handleBtnClick%3A%20function%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20this.list.push%28this.inputValue%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20this.inputValue%20%3D%20%27%27%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20//%20alert%28%27fuck%20you%21%27%29%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%7D%29%0A%0A%0A%0A%3C/script%3E%0A%0A%0A%3C/body%3E%0A%60%60%60%0A%0A-%20%5B%20%5DMVP%0A%21%5BMVP%5D%28./1528684547209.png%29%0A%60%60%60%0A%3Cbody%3E%0A%20%20%20%20%3Cdiv%20id%3D%22app%22%3E%0A%20%20%20%20%20%20%20%20%3Cinput%20id%3D%22input%22%20type%3D%22text%22%20name%3D%22%22%20%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20id%3D%22btn%22%20type%3D%22%22%3E%u63D0%u4EA4%3C/button%3E%0A%20%20%20%20%20%20%20%20%3Cul%20id%3D%22list%22%3E%0A%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20function%20Page%28%29%20%7B%0A%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%24.extend%28Page.prototype%2C%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20init%3A%20function%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20this.bindEvents%28%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20bindEvents%3A%20function%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20btn%20%3D%20%24%28%27%23btn%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20btn.on%28%27click%27%2C%24.proxy%28this.handleBtnClick%2Cthis%29%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20handleBtnClick%3A%20function%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20inputElem%20%3D%20%24%28%27%23input%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20ulElem%20%3D%20%24%28%27%23list%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20inputValue%20%3D%20inputElem.val%28%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20ulElem.append%28%27%3Cli%3E%27%20+%20inputValue%20+%20%27%3C/li%3E%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20inputElem.val%28%27%27%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%20%20%20%20var%20page%20%3D%20new%20Page%28%29%3B%0A%20%20%20%20%20%20%20%20page.init%28%29%3B%0A%20%20%20%20%3C/script%3E%0A%3C/body%3E%0A%60%60%60%0A-%20%5B%20%5D%0A%0A%0A%0A%23%23%23%202-5%20%u524D%u7AEF%u7EC4%u4EF6%u5316%0A%0A%23%23%23%202-6%20%u4F7F%u7528%u7EC4%u4EF6%u6539%u9020TodoList%0A%0A%23%23%23%202-7%20%u7B80%u5355%u7684%u7EC4%u4EF6%u95F4%u4F20%u503C%0A%0A%23%23%23%202-8%20%u7AE0%u8282%u5C0F%u7ED3%0A%0A%23%23%20%u7B2C3%u7AE0%20Vue%20%u57FA%u7840%u7CBE%u8BB2%0A%0A%23%23%23%203-1%20Vue%u5B9E%u4F8B%0A%0A%0A%23%23%23%203-2%20Vue%u5B9E%u4F8B%u751F%u547D%u5468%u671F%0A%0A%23%23%23%203-3%20Vue%u7684%u6A21%u7248%u8BED%u6CD5%0A%0A%23%23%23%203-4%20%u8BA1%u7B97%u5C5E%u6027%2C%u65B9%u6CD5%u4E0E%u4FA6%u542C%u5668%0A%0A%23%23%23%203-5%20%u8BA1%u7B97%u5C5E%u6027%u7684%20getter%20%u548C%20setter%0A%0A%23%23%23%203-6%20Vue%u4E2D%u7684%u6837%u5F0F%u7ED1%u5B9A%0A%0A%23%23%23%203-7%20Vue%u4E2D%u7684%u6761%u4EF6%u6E32%u67D3%0A%0A%23%23%23%203-8%20Vue%u4E2D%u7684%u5217%u8868%u6E32%u67D3%0A%0A%23%23%23%203-9%20Vue%u4E2D%u7684set%u65B9%u6CD5%0A%0A%u5217%u8868%u6E32%u67D3%u4E2D%uFF0C%u6570%u7EC4%uFF0C%u5BF9%u8C61%u7684%u503C%u7684%u6539%u53D8%uFF0C%u8981%u4EA7%u751F%u8054%u52A8%u6548%u679C%uFF1A%0A*%20%u76F4%u63A5%u5F15%u7528%0A*%20%24set%u65B9%u6CD5%0A*%20%u53D8%u5F02%u65B9%u6CD5%uFF08%u53EA%u80FD%u6570%u7EC4%u7528%uFF09%0A%0A%0A%23%23%20%u7B2C4%u7AE0%20%u6DF1%u5165%u7406%u89E3%20Vue%20%u7EC4%u4EF6%0A%0A%23%23%23%204-1%20%u4F7F%u7528%u7EC4%u4EF6%u7684%u7EC6%u8282%u70B9%0A**bug%uFF1A%u5F53%u5728%u4EE5%u4E0B%u60C5%u51B5%u5F15%u7528%u7EC4%u4EF6%u65F6%u6700%u597D%u7528is%u6307%u4EE4%uFF0C%u5426%u5219%u4F1A%u8FDD%u53CDhtml5%u89C4%u5219%u3002**%0A%60%60%60javascript%0A%3Ctable%3E%0A%09%3Ctbody%3E%0A%09%09%3Ctr%20is%3D%22row%22%20%3E%3C/tr%3E%0A%09%09%3Ctr%20is%3D%22row%22%20%3E%3C/tr%3E%0A%09%09%3Ctr%20is%3D%22row%22%20%3E%3C/tr%3E%0A%0A%09%3C/tbody%3E%0A%3C/table%3E%0A%60%60%60%0A%60%60%60javascript%0A%3Cselect%3E%0A%09%3Coption%20is%3D%22row%22%20/%3E%0A%09%3Coption%20is%3D%22row%22%20%20/%3E%0A%09%3Coption%20is%3D%22row%22%20%20/%3E%0A%3C/select%3E%0A%60%60%60%0A%60%60%60javascript%0A%3Cul%3E%0A%09%3Cli%20is%3D%22row%22%3E%3C/li%3E%0A%09%3Cli%20is%3D%22row%22%3E%3C/li%3E%0A%09%3Cli%20is%3D%22row%22%3E%3C/li%3E%0A%3C/ul%3E%0A%60%60%60%0A%0A%23%23%23%204-2%20%u7236%u5B50%u7EC4%u4EF6%u95F4%u7684%u6570%u636E%u4F20%u9012%0A%0A%23%23%23%204-3%20%u7EC4%u4EF6%u53C2%u6570%u6821%u9A8C%u4E0E%u975E%20props%20%u7279%u6027%0A%0A%23%23%23%204-4%20%u7ED9%u7EC4%u4EF6%u7ED1%u5B9A%u539F%u751F%u4E8B%u4EF6%0A%0A%23%23%23%204-5%20%u975E%u7236%u5B50%u7EC4%u4EF6%u95F4%u7684%u4F20%u503C%0A%0A%23%23%23%204-6%20%u5728Vue%u4E2D%u4F7F%u7528%u63D2%u69FD%0A%0A%23%23%23%204-7%20%u4F5C%u7528%u57DF%u63D2%u69FD%0A%0A%23%23%23%204-8%20%u52A8%u6001%u7EC4%u4EF6%u4E0E%20v-once%20%u6307%u4EE4%0A%0A%23%23%23%20%u7B2C5%u7AE0%20Vue%20%u4E2D%u7684%u52A8%u753B%u7279%u6548%0A%0A%23%23%23%205-1%20Vue%u52A8%u753B%20-%20Vue%u4E2DCSS%u52A8%u753B%u539F%u7406%0A%0A%23%23%23%205-2%20%u5728Vue%u4E2D%u4F7F%u7528%20animate.css%20%u5E93%0A%0A%23%23%23%205-3%20%u5728Vue%u4E2D%u540C%u65F6%u4F7F%u7528%u8FC7%u6E21%u548C%u52A8%u753B%0A%0A%23%23%23%205-4%20Vue%u4E2D%u7684%20Js%20%u52A8%u753B%u4E0E%20Velocity.js%20%u7684%u7ED3%u5408%0A%23%23%23%205-5%20Vue%u4E2D%u591A%u4E2A%u5143%u7D20%u6216%u7EC4%u4EF6%u7684%u8FC7%u6E21%0A%0A%23%23%23%205-6%20Vue%u4E2D%u7684%u5217%u8868%u8FC7%u6E21%0A%0A%23%23%23%205-7%20Vue%u4E2D%u7684%u52A8%u753B%u5C01%u88C5%0A%0A%23%23%23%205-8%20%u672C%u7AE0%u5C0F%u8282%0A%0A%23%23%20%u7B2C6%u7AE0%20Vue%20%u9879%u76EE%u9884%u70ED%0A%0A%23%23%23%206-1%20Vue%u9879%u76EE%u9884%u70ED%20-%20%u73AF%u5883%u914D%u7F6E%0A%60%60%60%0Agit%20status%0Agit%20add%20.%0Agit%20commit%20-m%20project%20%27initialized%27%0Agit%20push%0A%60%60%60%0A%0A%3Cinput%20type%3D%22text%22%20v-model%3D%22inputValue%22%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20%22%3Eok%3C/button%3E%0A%23%23%23%206-2%20Vue%u9879%u76EE%u9884%u70ED%20-%20%u9879%u76EE%u4EE3%u7801%u4ECB%u7ECD%0A%0A%23%23%23%206-3%20Vue%u9879%u76EE%u9884%u70ED%20-%20%u5355%u6587%u4EF6%u7EC4%u4EF6%u4E0E%0A%23%23%23%206-4%20Vue%u9879%u76EE%u9884%u70ED%20-%20%u5355%u9875%u5E94%u7528VS%u591A%u9875%u5E94%u7528%0A%0A%23%23%23%206-5%20Vue%u9879%u76EE%u9884%u70ED%20-%20%u9879%u76EE%u4EE3%u7801%u521D%u59CB%u5316%0A%0A%23%23%20%u7B2C7%u7AE0%20%u9879%u76EE%u5B9E%u6218%20-%20%u65C5%u6E38%u7F51%u7AD9%u9996%u9875%u5F00%u53D1%0A%0A%23%23%23%207-1%20Vue%u9879%u76EE%u9996%u9875%20-%20header%u533A%u57DF%u5F00%u53D1%0A%0A%23%23%23%207-2%20Vue%u9879%u76EE%u9996%u9875%20-%20iconfont%20%u7684%u4F7F%u7528%u548C%u4EE3%u7801%u4F18%u5316%0A%0A%23%23%23%207-3%20Vue%u9879%u76EE%u9996%u9875%20-%20%u9996%u9875%u8F6E%u64AD%u56FE%0A%0A%23%23%23%207-4%20Vue%u9879%u76EE%u9996%u9875%20-%20%u56FE%u6807%u533A%u57DF%u9875%u9762%u5E03%u5C40%0A%0A%23%23%23%207-5%20Vue%u9879%u76EE%u9996%u9875%20-%20%u56FE%u6807%u533A%u57DF%u903B%u8F91%u5B9E%u73B0%0A%0A%23%23%23%207-6%20Vue%u9879%u76EE%u9996%u9875%20-%20%u70ED%u9500%u63A8%u8350%u7EC4%u4EF6%u5F00%u53D1%0A%0A%23%23%23%207-7%20Vue%u9879%u76EE%u9996%u9875%20-%20%u5F00%u53D1%u5468%u672B%u6E38%u7EC4%u4EF6%0A%0A%23%23%23%207-8%20Vue%u9879%u76EE%u9996%u9875%20-%20%u4F7F%u7528%20axios%20%u53D1%u9001%20ajax%20%u8BF7%u6C42%0A%0A%23%23%23%207-9%20Vue%u9879%u76EE%u9996%u9875%20-%20%u9996%u9875%u7236%u5B50%u7EC4%u7EC4%u4EF6%u95F4%u4F20%u503C%0A%0A%23%23%20%u7B2C8%u7AE0%20%u9879%u76EE%u5B9E%u6218%20-%20%u65C5%u6E38%u7F51%u7AD9%u57CE%u5E02%u5217%u8868%u9875%u9762%u5F00%u53D1%0A%0A%23%23%23%208-1%20Vue%u9879%u76EE%u57CE%u5E02%u9009%u62E9%u9875%20-%20%u8DEF%u7531%u914D%u7F6E%0A%0A%23%23%23%208-2%20Vue%u9879%u76EE%u57CE%u5E02%u9009%u62E9%u9875%20-%20%u641C%u7D22%u6846%u5E03%u5C40%0A%0A%23%23%23%208-3%20Vue%u9879%u76EE%u57CE%u5E02%u9009%u62E9%u9875%20-%20%u5217%u8868%u5E03%u5C40%0A%0A%23%23%23%208-4%20Vue%u9879%u76EE%u57CE%u5E02%u9009%u62E9%u9875%20-%20BetterScroll%20%u7684%u4F7F%u7528%u548C%u5B57%u6BCD%u8868%u5E03%u5C40%0A%0A%23%23%23%208-5%20Vue%u9879%u76EE%u57CE%u5E02%u9009%u62E9%u9875%20-%20%u9875%u9762%u7684%u52A8%u6001%u6570%u636E%u6E32%u67D3%0A%0A%23%23%23%208-6%20Vue%u9879%u76EE%u57CE%u5E02%u9009%u62E9%u9875%20-%20%u5144%u5F1F%u7EC4%u4EF6%u6570%u636E%u4F20%u9012%0A%0A%23%23%23%208-7%20Vue%u9879%u76EE%u57CE%u5E02%u9009%u62E9%u9875%20-%20%u5217%u8868%u6027%u80FD%u4F18%u5316%0A%0A%23%23%23%208-8%20Vue%u9879%u76EE%u57CE%u5E02%u9009%u62E9%u9875%20-%20%u641C%u7D22%u903B%u8F91%u5B9E%u73B0%0A%0A%23%23%23%208-9%20Vue%u9879%u76EE%u57CE%u5E02%u9009%u62E9%u9875%20-%20Vuex%u5B9E%u73B0%u6570%u636E%u5171%u4EAB%0A%0A%23%23%23%208-10%20Vue%u9879%u76EE%u57CE%u5E02%u9009%u62E9%u9875%20-%20Vuex%u7684%u9AD8%u7EA7%u4F7F%u7528%u53CAlocalStorage%0A%0A%23%23%23%208-11%20Vue%u9879%u76EE%u57CE%u5E02%u9009%u62E9%u9875%20-%20%u4F7F%u7528keep-alive%u4F18%u5316%u7F51%u9875%u6027%u80FD%0A%0A%23%23%20%u7B2C9%u7AE0%20%u9879%u76EE%u5B9E%u6218%20-%20%u65C5%u6E38%u7F51%u7AD9%u8BE6%u60C5%u9875%u9762%u5F00%u53D1%0A%0A%23%23%23%209-1%20Vue%u9879%u76EE%u8BE6%u60C5%u9875%20-%20%u52A8%u6001%u8DEF%u7531%u548Cbanner%u5E03%u5C40%0A%0A%23%23%23%209-2%20Vue%u9879%u76EE%u8BE6%u60C5%u9875%20-%20%u516C%u7528%u56FE%u7247%u753B%u5ECA%u7EC4%u4EF6%u62C6%u5206%0A%0A%23%23%23%209-3%20Vue%u9879%u76EE%u8BE6%u60C5%u9875%20-%20%u5B9E%u73B0Header%u6E10%u9690%u6E10%u663E%u6548%u679C%0A%0A%23%23%23%209-4%20Vue%u9879%u76EE%u8BE6%u60C5%u9875%20-%20%u5BF9%u5168%u5C40%u4E8B%u4EF6%u7684%u89E3%u7ED1%0A%0A%23%23%23%209-5%20Vue%u9879%u76EE%u8BE6%u60C5%u9875%20-%20%u4F7F%u7528%u9012%u5F52%u7EC4%u4EF6%u5B9E%u73B0%u8BE6%u60C5%u9875%u5217%u8868%0A%0A%23%23%23%209-6%20Vue%u9879%u76EE%u8BE6%u60C5%u9875%20-%20%u52A8%u6001%u83B7%u53D6%u8BE6%u60C5%u9875%u9762%u6570%u636E%0A%0A%23%23%23%209-7%20Vue%u9879%u76EE%u8BE6%u60C5%u9875%20-%20%u5728%u9879%u76EE%u4E2D%u52A0%u5165%u57FA%u7840%u52A8%u753B%0A%0A%23%23%20%u7B2C10%u7AE0%20%u5B9E%u6218%u9879%u76EE%20-%20%u9879%u76EE%u7684%u8054%u8C03%uFF0C%u6D4B%u8BD5%u4E0E%u53D1%u5E03%u4E0A%u7EBF%0A%0A%23%23%23%2010-1%20Vue%u9879%u76EE%u7684%u8054%u8C03%u6D4B%u8BD5%u4E0A%u7EBF%20-%20%u9879%u76EE%u524D%u540E%u7AEF%u8054%u8C03%0A%0A%23%23%23%2010-2%20Vue%u9879%u76EE%u7684%u8054%u8C03%u6D4B%u8BD5%u4E0A%u7EBF%20-%20%u771F%u673A%u6D4B%u8BD5%0A%0A%23%23%23%2010-3%20Vue%u9879%u76EE%u7684%u8054%u8C03%u6D4B%u8BD5%u4E0A%u7EBF%20-%20%u6253%u5305%u4E0A%u7EBF%0A%0A%23%23%23%2010-4%20Vue%u9879%u76EE%u7684%u8054%u8C03%u6D4B%u8BD5%u4E0A%u7EBF%20-%20%u5F02%u6B65%u7EC4%u4EF6%u5B9E%u73B0%u6309%u9700%u52A0%u8F7D%0A%0A%23%23%23%2010-5%20Vue%u9879%u76EE%u7684%u8054%u8C03%u6D4B%u8BD5%u4E0A%u7EBF%20-%20%u8BFE%u7A0B%u603B%u7ED3%u4E0E%u540E%u7EED%u5B66%u4E60%u6307%u5357%0A%0A%23%23%20%u9644%u5F55</center></article>
     </section>
 
     <footer class="ui attached segment dream-tags">
@@ -374,6 +456,8 @@ Vue2.5去哪儿网app开发
 
   
   <section class="ui attached center aligned segment dream-tags">
+    
+      <a class="ui label" href="/tags/es" title="es">es</a>
     
       <a class="ui label" href="/tags/golang" title="golang">golang</a>
     
@@ -506,6 +590,22 @@ Vue2.5去哪儿网app开发
             <div class="item">
               <div class="content">
                 <a href="https://haidongsong.github.io/posts/%E6%8A%95%E8%B5%84/" class="item">投资</a>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      
+        <div class="title">
+          <i class="dropdown icon"></i>
+          <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93" class="item">数据库</a>
+        </div>
+        <div class="content">
+          <div class="ui list">
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://haidongsong.github.io/posts/mongo-es%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5/" class="item">mongo实时同步数据到Elasticsearch及服务器部署</a>
               </div>
             </div>
           
