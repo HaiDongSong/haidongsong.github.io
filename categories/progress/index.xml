@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>progress on Bob Dylan</title>
+    <link>https://haidongsong.github.io/categories/progress/</link>
+    <description>Recent content in progress on Bob Dylan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://haidongsong.github.io/categories/progress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>工作记录</title>
+      <link>https://haidongsong.github.io/posts/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/</guid>
+      <description>[toc] {{toc}} te 工作记录 jan 30 gantt dateFormat YYY-MM-DD-HH title 学习计划 section 1 craw: 2020-01-30-00, 6h section 2 django: 2020-01-30-18, 6h section 3 mongodb: 2020-01-31-00, 6h linux命令的复习 https://www.bilibili.com/video/av46253543?t=561&amp;amp;p=27 seafile的安装 安装好后，选择默认目录作为lib存</description>
+    </item>
+    
+    <item>
+      <title>app爬虫</title>
+      <link>https://haidongsong.github.io/posts/app%E7%88%AC%E8%99%AB/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/app%E7%88%AC%E8%99%AB/</guid>
+      <description>[toc] APP抓取 环境搭建 安装fiddler 设置switchypmega后，没有办法联网．不设置抓不到数据 genymotion的安装和填坑指南 下载</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu安装及Python环境的配置</title>
+      <link>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://haidongsong.github.io/posts/ubuntu%E5%AE%89%E8%A3%85%E5%8F%8Apython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE1/</guid>
+      <description>[toc] Ubuntu安装及Python环境的配置 1. ubuntu18.04基于win10双系统的安装 1.1 分区 查看系统BIOS模式 win+R, 输入msinfo32</description>
+    </item>
+    
+  </channel>
+</rss>
